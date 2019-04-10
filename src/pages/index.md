@@ -4,6 +4,31 @@ title: Great coffee with a conscience
 image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
+calltoactions:
+  firstCTA:
+    title: What We Are Fighting For
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco..
+    linkType: internal
+    linkURL: /history
+  secondCTA:
+    title: History Of Waterloo Dock
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco..
+    linkType: internal
+    linkURL: /history
+  thirdCTA:
+    title: Looking To Help?
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco..
+    linkType: internal
+    linkURL: /looking-to-help
 mainpitch:
   title: Why Kaldi
   description: >
@@ -68,3 +93,4 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
+
