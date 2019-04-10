@@ -47,48 +47,71 @@ collections:
               widget: object,
               fields:
                 [
-                  { label: Title, name: title, widget: string },
-                  { label: Description, name: description, widget: text },
                   {
-                    label: "Link Type",
-                    name: "linkType",
-                    widget: "select",
-                    options: ["internal", "external"],
+                    label: "First CTA",
+                    name: "firstCTA",
+                    required: true,
+                    widget: "object",
+                    fields: {
+                      { label: Title, name: title, widget: string },
+                      { label: Description, name: description, widget: text },
+                      {
+                        label: "Link Type",
+                        name: "linkType",
+                        widget: "select",
+                        options: ["internal", "external"],
+                      },
+                      {
+                        label: "Link URL",
+                        name: "linkURL",
+                        widget: "string",
+                        hint: "Use a relative URL (e.g. /about) if the link is an internal link.",
+                      },
+                    },
                   },
                   {
-                    label: "Link URL",
-                    name: "linkURL",
-                    widget: "string",
-                    hint: "Use a relative URL (e.g. /about) if the link is an internal link.",
-                  },
-                  { label: Title, name: title, widget: string },
-                  { label: Description, name: description, widget: text },
-                  {
-                    label: "Link Type",
-                    name: "linkType",
-                    widget: "select",
-                    options: ["internal", "external"],
-                  },
-                  {
-                    label: "Link URL",
-                    name: "linkURL",
-                    widget: "string",
-                    hint: "Use a relative URL (e.g. /about) if the link is an internal link.",
-                  },
-                  { label: Title, name: title, widget: string },
-                  { label: Description, name: description, widget: text },
-                  {
-                    label: "Link Type",
-                    name: "linkType",
-                    widget: "select",
-                    options: ["internal", "external"],
+                    label: "Second CTA",
+                    name: "secondCTA",
+                    required: true,
+                    widget: "object",
+                    fields: {
+                      { label: Title, name: title, widget: string },
+                      { label: Description, name: description, widget: text },
+                      {
+                        label: "Link Type",
+                        name: "linkType",
+                        widget: "select",
+                        options: ["internal", "external"],
+                      },
+                      {
+                        label: "Link URL",
+                        name: "linkURL",
+                        widget: "string",
+                        hint: "Use a relative URL (e.g. /about) if the link is an internal link.",
+                      },
+                    }
                   },
                   {
-                    label: "Link URL",
-                    name: "linkURL",
-                    widget: "string",
-                    hint: "Use a relative URL (e.g. /about) if the link is an internal link.",
-                  },
+                    label: "Third CTA",
+                    name: "thirdCTA",
+                    required: true,
+                    widget: "object",
+                    fields: {
+                      { label: Title, name: title, widget: string },
+                      { label: Description, name: description, widget: text },
+                      {
+                        label: "Link Type",
+                        name: "linkType",
+                        widget: "select",
+                        options: ["internal", "external"],
+                      },
+                      {
+                        label: "Link URL",
+                        name: "linkURL",
+                        widget: "string",
+                        hint: "Use a relative URL (e.g. /about) if the link is an internal link.",
+                      },
+                    }
                 ],
             }
           - {
