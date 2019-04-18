@@ -1,27 +1,20 @@
 import React from "react";
-import Helmet from "react-helmet";
-import styled, { ThemeProvider } from "styled-components";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import { ThemeProvider } from "styled-components";
 import App from "../components/App";
 import "./all.scss";
-import useSiteMetadata from "./SiteMetadata";
 import { NavigationProvider } from "../context/NavigationContext";
-
-const FakeBody = styled.div`
-  width: 100%;
-  overflow: hidden;
-`;
 
 const theme = {
   darkColor: "#111111",
   white: "#ffffff",
-  navy: "#13151E"
+  navy: "#13151E",
+  normalTransition: "0.3s all ease-in-out",
+  navTransition: "0.3s all ease-in-out",
+  navBorderValue: "1px solid rgba(216,216,216,0.20)",
+  blueFaded: "rgba(0, 58, 156, 0.8)"
 };
 
-const TemplateWrapper = ({ children }) => {
-  const { title, description } = useSiteMetadata();
-
+const TemplateWrapper = () => {
   const isNavActive = {
     isActive: false
   };

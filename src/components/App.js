@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import Helmet from "react-helmet";
-import styled, { ThemeProvider } from "styled-components";
+import styled from "styled-components";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "./all.scss";
@@ -8,15 +8,17 @@ import useSiteMetadata from "./SiteMetadata";
 import { useNavigationValue } from "../context/NavigationContext";
 
 const FakeBody = styled.div`
+  position: relative;
+  left: 0;
   width: 100%;
   overflow: hidden;
+  transition: ${props => props.theme.navTransition};
+  &.is-active {
+    @media (max-width: 991px) {
+      left: -200px;
+    }
+  }
 `;
-
-const theme = {
-  darkColor: "#111111",
-  white: "#ffffff",
-  navy: "#13151E"
-};
 
 const App = ({ children }) => {
   const [{ isActive }, dispatch] = useNavigationValue();
