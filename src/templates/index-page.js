@@ -19,7 +19,7 @@ const BannerImage = styled.div`
   background-position: 50%;
   background-color: ${props => props.theme.darkColor};
   @media (min-width: 992px) {
-    padding-top: 90px;
+    padding-top: 100px;
     min-height: 500px;
   }
 
@@ -69,7 +69,7 @@ const Title = styled.h1`
   @media (min-width: 1380px) {
     font-size: 48px;
     margin-bottom: 50px;
-    line-height: 68px;
+    line-height: 72px;
   }
 `;
 
@@ -100,6 +100,12 @@ const Slant = styled.div`
   height: 50%;
   min-height: 320px;
 
+  @media (min-width: 992px) {
+    left: -50%;
+    height: 100%;
+    width: 100%;
+  }
+
   &:before,
   &::after {
     content: "";
@@ -110,18 +116,53 @@ const Slant = styled.div`
     transform-origin: 100%;
     z-index: -1;
     box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.2);
+    @media (min-width: 992px) {
+      height: 100%;
+      transform: skewY(0);
+      transform: skewX(-22deg);
+    }
   }
 
   &:before {
-    height: 120%;
-    top: -50%;
     background: rgba(0, 58, 156, 0.8);
+    top: -50%;
+    @media (max-width: 991px) {
+      height: 120%;
+    }
+
+    @media (min-width: 768px) {
+      top: -70%;
+    }
+    @media (min-width: 992px) {
+      height: inherit;
+      top: 0;
+    }
   }
 
   &:after {
-    height: 60px;
-    bottom: 36px;
     background: rgba(0, 58, 156, 0.4);
+    height: 60px;
+    @media (max-width: 991px) {
+      bottom: 36px;
+    }
+
+    @media (min-width: 768px) {
+      bottom: 100px;
+    }
+
+    @media (min-width: 992px) {
+      left: unset;
+      right: -80px;
+      top: 0;
+      bottom: 0;
+      height: inherit;
+      width: 80px;
+    }
+
+    @media (min-width: 1380px) {
+      width: 140px;
+      right: -140px;
+    }
   }
 `;
 
