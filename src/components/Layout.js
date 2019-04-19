@@ -11,10 +11,11 @@ const theme = {
   normalTransition: "0.3s all ease-in-out",
   navTransition: "0.3s all ease-in-out",
   navBorderValue: "1px solid rgba(216,216,216,0.20)",
-  blueFaded: "rgba(0, 58, 156, 0.8)"
+  blueFaded: "rgba(0, 58, 156, 0.8)",
+  textShadow: " 0 2px 4px rgba(0, 0, 0, 0.5)"
 };
 
-const TemplateWrapper = () => {
+const TemplateWrapper = ({ children }) => {
   const isNavActive = {
     isActive: false
   };
@@ -34,7 +35,7 @@ const TemplateWrapper = () => {
   return (
     <ThemeProvider theme={theme}>
       <NavigationProvider initialState={isNavActive} reducer={reducer}>
-        <App />
+        <App>{children}</App>
       </NavigationProvider>
     </ThemeProvider>
   );

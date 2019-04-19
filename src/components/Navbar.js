@@ -195,11 +195,8 @@ function Navbar() {
               <NavigationItem>
                 <Link to="/latest-news">Latest News</Link>
               </NavigationItem>
-              <NavigationItem>
-                <Link to="/contact">Contact</Link>
-              </NavigationItem>
               <NavigationItem contact>
-                <Link to="/contact/examples">Form Examples</Link>
+                <Link to="/contact">Contact</Link>
               </NavigationItem>
             </NavigationList>
           </NavigationMenu>
