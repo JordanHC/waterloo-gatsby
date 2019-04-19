@@ -7,7 +7,9 @@ import Layout from "../components/Layout";
 // import LatestNewsRoll from "../components/LatestNewsRoll";
 
 const Banner = styled.section`
+  position: relative;
   color: ${props => props.theme.white};
+  overflow: hidden;
 `;
 
 const BannerImage = styled.div`
@@ -40,6 +42,11 @@ const Container = styled.div`
 `;
 
 const BannerTextWrap = styled.div`
+  position: relative;
+  z-index: 100;
+  @media (max-width: 992px) {
+    max-width: 320px;
+  }
   @media (min-width: 992px) {
     max-width: 40%;
   }
@@ -84,22 +91,59 @@ const Subtitle = styled.h2`
   }
 `;
 
+const Slant = styled.div`
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  min-height: 320px;
+
+  &:before,
+  &::after {
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(-10.5deg);
+    transform-origin: 100%;
+    z-index: -1;
+    box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  &:before {
+    height: 120%;
+    top: -50%;
+    background: rgba(0, 58, 156, 0.8);
+  }
+
+  &:after {
+    height: 60px;
+    bottom: 36px;
+    background: rgba(0, 58, 156, 0.4);
+  }
+`;
+
 export const IndexPageTemplate = ({ image, title, heading, subheading }) => (
-  <Banner>
-    <BannerImage
-      style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`
-      }}
-    >
-      <Container>
-        <BannerTextWrap>
-          <Title>{title}</Title>
-          <Subtitle>{subheading}</Subtitle>
-        </BannerTextWrap>
-      </Container>
-    </BannerImage>
+  <>
+    <Banner>
+      <BannerImage
+        style={{
+          backgroundImage: `url(${
+            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+          })`
+        }}
+      >
+        <Container>
+          <BannerTextWrap>
+            <Title>{title}</Title>
+            <Subtitle>{subheading}</Subtitle>
+          </BannerTextWrap>
+        </Container>
+        <Slant />
+      </BannerImage>
+    </Banner>
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
@@ -111,11 +155,11 @@ export const IndexPageTemplate = ({ image, title, heading, subheading }) => (
                     Latest stories
                   </h3>
                   {/* <LatestNewsRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/latest-news">
-                      Read more
-                    </Link>
-                  </div> */}
+                <div className="column is-12 has-text-centered">
+                  <Link className="btn" to="/latest-news">
+                    Read more
+                  </Link>
+                </div> */}
                 </div>
               </div>
             </div>
@@ -123,7 +167,7 @@ export const IndexPageTemplate = ({ image, title, heading, subheading }) => (
         </div>
       </div>
     </section>
-  </Banner>
+  </>
 );
 
 IndexPageTemplate.propTypes = {

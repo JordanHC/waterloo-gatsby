@@ -4,6 +4,8 @@ import styled from "styled-components";
 import { useNavigationValue } from "../context/NavigationContext";
 
 const Navigation = styled.nav`
+  position: relative;
+  z-index: 100;
   background: ${props => props.theme.darkColor};
   color: ${props => props.theme.white};
 `;
