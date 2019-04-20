@@ -4,8 +4,9 @@ import { Link, graphql } from "gatsby";
 import styled from "styled-components";
 import Layout from "../components/Layout";
 import CallToActions from "../components/CallToActions";
+import LatestNewsHome from "../components/LatestNewsHome";
 import Container from "../components/ui/Container";
-import LatestNewsRoll from "../components/LatestNewsRoll";
+import HeadingThree from "../components/ui/HeadingThree";
 
 const LiftOff = styled.section`
   position: relative;
@@ -200,11 +201,7 @@ export const IndexPageTemplate = ({
     <LiftOff>
       <Container>
         <CallToActions data={callToActions} />
-        <h3 className="has-text-weight-semibold is-size-2">Latest stories</h3>
-        <LatestNewsRoll />
-        <div>
-          <Link to="/latest-news">Read more</Link>
-        </div>
+        <LatestNewsHome />
       </Container>
     </LiftOff>
   </>
@@ -258,7 +255,7 @@ export const pageQuery = graphql`
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_tracedSVG
             }
           }
         }
