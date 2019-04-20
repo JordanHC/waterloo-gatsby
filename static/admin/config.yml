@@ -45,17 +45,11 @@ collections:
             name: cta1
             widget: "object"
             fields:
-              - { label: Heading, name: cta1heading, widget: string }
-              - { label: Description, name: cta1description, widget: text }
-              - {
-                  label: "Link Type",
-                  name: "cta1linkType",
-                  widget: "select",
-                  options: ["internal", "external"],
-                }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Description, name: description, widget: text }
               - {
                   label: "Link URL",
-                  name: "cta1linkURL",
+                  name: "linkURL",
                   widget: "string",
                   hint: "Use a relative URL (e.g. /about) if the link is an internal link.",
                 }
@@ -63,17 +57,11 @@ collections:
             name: cta2
             widget: "object"
             fields:
-              - { label: Heading, name: cta2heading, widget: string }
-              - { label: Description, name: cta2description, widget: text }
-              - {
-                  label: "Link Type",
-                  name: "cta2linkType",
-                  widget: "select",
-                  options: ["internal", "external"],
-                }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Description, name: description, widget: text }
               - {
                   label: "Link URL",
-                  name: "cta2linkURL",
+                  name: "linkURL",
                   widget: "string",
                   hint: "Use a relative URL (e.g. /about) if the link is an internal link.",
                 }
@@ -81,17 +69,11 @@ collections:
             name: cta3
             widget: "object"
             fields:
-              - { label: Heading, name: cta3heading, widget: string }
-              - { label: Description, name: cta3description, widget: text }
-              - {
-                  label: "Link Type",
-                  name: "cta3linkType",
-                  widget: "select",
-                  options: ["internal", "external"],
-                }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Description, name: description, widget: text }
               - {
                   label: "Link URL",
-                  name: "cta3linkURL",
+                  name: "linkURL",
                   widget: "string",
                   hint: "Use a relative URL (e.g. /about) if the link is an internal link.",
                 }

@@ -2,9 +2,27 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import styled from "styled-components";
-
 import Layout from "../components/Layout";
+import CallToActions from "../components/CallToActions";
+import Container from "../components/ui/Container";
 // import LatestNewsRoll from "../components/LatestNewsRoll";
+
+const LiftOff = styled.section`
+  position: relative;
+  z-index: 200;
+  background: ${props => props.theme.white};
+  box-shadow: ${props => props.theme.textShadow};
+  border-radius: 4px;
+  @media (min-width: 992px) {
+    transform: translateY(-80px);
+    max-width: 1032px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1380px) {
+    max-width: 1420px;
+  }
+`;
 
 const Banner = styled.section`
   position: relative;
@@ -20,24 +38,12 @@ const BannerImage = styled.div`
   background-color: ${props => props.theme.darkColor};
   @media (min-width: 992px) {
     padding-top: 100px;
-    min-height: 500px;
+    min-height: 550px;
   }
 
   @media (min-width: 1380px) {
     padding-top: 150px;
     min-height: 800px;
-  }
-`;
-
-const Container = styled.div`
-  padding-left: 20px;
-  padding-right: 20px;
-  @media (min-width: 992px) {
-    max-width: 952px;
-    margin: 0 auto;
-  }
-  @media (min-width: 1380px) {
-    max-width: 1340px;
   }
 `;
 
@@ -166,7 +172,13 @@ const Slant = styled.div`
   }
 `;
 
-export const IndexPageTemplate = ({ image, title, heading, subheading }) => (
+export const IndexPageTemplate = ({
+  image,
+  title,
+  heading,
+  subheading,
+  callToActions
+}) => (
   <>
     <Banner>
       <BannerImage
@@ -185,6 +197,11 @@ export const IndexPageTemplate = ({ image, title, heading, subheading }) => (
         <Slant />
       </BannerImage>
     </Banner>
+    <LiftOff>
+      <Container>
+        <CallToActions data={callToActions} />
+      </Container>
+    </LiftOff>
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
@@ -220,6 +237,13 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
+  const callToActions = [];
+
+  Object.keys(frontmatter).forEach(key => {
+    if (key.includes("cta")) {
+      callToActions.push(frontmatter[key]);
+    }
+  });
 
   return (
     <Layout>
@@ -228,6 +252,7 @@ const IndexPage = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
+        callToActions={callToActions}
       />
     </Layout>
   );
@@ -257,6 +282,24 @@ export const pageQuery = graphql`
         }
         heading
         subheading
+        cta1 {
+          heading
+          description
+          linkType
+          linkURL
+        }
+        cta2 {
+          heading
+          description
+          linkType
+          linkURL
+        }
+        cta3 {
+          heading
+          description
+          linkType
+          linkURL
+        }
       }
     }
   }

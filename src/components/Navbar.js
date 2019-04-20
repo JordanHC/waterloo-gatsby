@@ -59,7 +59,7 @@ const NavigationItem = styled.li`
       padding: 30px 20px;
       font-size: 14px;
       border-left: ${props => props.theme.navBorderValue};
-      transition: ${props => props.theme.navTransition};
+      transition: ${props => props.theme.normalTransition};
     }
 
     @media (min-width: 1380px) {
@@ -76,7 +76,7 @@ const NavigationItem = styled.li`
 `;
 
 const NavigationMenu = styled.div`
-  transition: ${props => props.theme.navTransition};
+  transition: ${props => props.theme.normalTransition};
   @media (max-width: 991px) {
     background: ${props => props.theme.navy};
     position: fixed;
@@ -111,7 +111,7 @@ const BurgerLine = styled.span`
     display: block;
     background: ${props => props.theme.white};
     margin: ${props => (props.middle ? "5px 0" : "0")};
-    transition: 0.3s all ease-in-out;
+    transition: ${props => props.theme.normalTransition};
     .is-active & {
       ${props => (props.middle ? `opacity: 0;` : ``)}
       ${props =>
