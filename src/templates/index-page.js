@@ -5,7 +5,7 @@ import styled from "styled-components";
 import Layout from "../components/Layout";
 import CallToActions from "../components/CallToActions";
 import Container from "../components/ui/Container";
-// import LatestNewsRoll from "../components/LatestNewsRoll";
+import LatestNewsRoll from "../components/LatestNewsRoll";
 
 const LiftOff = styled.section`
   position: relative;
@@ -200,31 +200,13 @@ export const IndexPageTemplate = ({
     <LiftOff>
       <Container>
         <CallToActions data={callToActions} />
+        <h3 className="has-text-weight-semibold is-size-2">Latest stories</h3>
+        <LatestNewsRoll />
+        <div>
+          <Link to="/latest-news">Read more</Link>
+        </div>
       </Container>
     </LiftOff>
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
-                  </h3>
-                  {/* <LatestNewsRoll />
-                <div className="column is-12 has-text-centered">
-                  <Link className="btn" to="/latest-news">
-                    Read more
-                  </Link>
-                </div> */}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </>
 );
 
