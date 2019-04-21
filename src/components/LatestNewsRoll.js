@@ -26,13 +26,13 @@ const Article = styled.article`
   @media (min-width: 992px) {
     width: 100%;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 68px;
+    margin-bottom: 82px;
   }
 
   @media (min-width: 1380px) {
-    justify-content: space-between;
-    margin-bottom: 90px;
+    margin-bottom: 98px;
   }
 `;
 
@@ -45,18 +45,24 @@ const Wrapper = styled.div`
   }
 `;
 
+const ArticleLink = styled(Link)`
+  @media (min-width: 992px) {
+    ${Article}:last-child & {
+      order: 1;
+    }
+  }
+`;
+
 const Image = styled.img`
   max-width: 100%;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.5);
+
   @media (max-width: 767px) {
     width: 320px;
   }
 
   @media (min-width: 992px) {
-    width: 400px;
-
-    ${Article}:last-child & {
-      order: 1;
-    }
+    width: 440px;
   }
 
   @media (min-width: 1380px) {
@@ -74,11 +80,14 @@ const Title = styled.h4`
   }
 
   @media (min-width: 992px) {
+    margin-top: 0;
+    margin-bottom: 10px;
     font-size: 16px;
   }
 
   @media (min-width: 1380px) {
     font-size: 20px;
+    line-height: 30px;
   }
 `;
 
@@ -97,20 +106,13 @@ const ArticleText = styled.div`
     flex-basis: 50%;
     ${Article}:first-child & {
       padding-left: 50px;
-    }
-
-    ${Article}:last-child & {
-      padding-right: 50px;
-      order: 0;
-    }
-  }
-  @media (min-width: 1380px) {
-    ${Article}:first-child & {
       padding-right: 40px;
     }
 
     ${Article}:last-child & {
+      padding-right: 50px;
       padding-left: 40px;
+      order: 0;
     }
   }
 `;
@@ -125,14 +127,16 @@ class LatestNewsRoll extends React.Component {
         {posts &&
           posts.map(({ node: post }) => (
             <Article key={post.id}>
-              <Image
-                src={
-                  !!post.frontmatter.image.childImageSharp
-                    ? post.frontmatter.image.childImageSharp.fluid.src
-                    : post.frontmatter.image
-                }
-                alt={`${post.frontmatter.title}`}
-              />
+              <ArticleLink to={post.fields.slug}>
+                <Image
+                  src={
+                    !!post.frontmatter.image.childImageSharp
+                      ? post.frontmatter.image.childImageSharp.fluid.src
+                      : post.frontmatter.image
+                  }
+                  alt={`${post.frontmatter.title}`}
+                />
+              </ArticleLink>
               <ArticleText>
                 <Title>
                   <Link to={post.fields.slug}>{post.frontmatter.title}</Link>

@@ -111,7 +111,7 @@ const BurgerLine = styled.span`
     display: block;
     background: ${props => props.theme.white};
     margin: ${props => (props.middle ? "5px 0" : "0")};
-    transition: ${props => props.theme.normalTransition};
+    transition: ${props => props.theme.burgerTransition};
     .is-active & {
       ${props => (props.middle ? `opacity: 0;` : ``)}
       ${props =>

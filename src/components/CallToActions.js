@@ -6,11 +6,9 @@ import Text from "./ui/Text";
 import Anchor from "./ui/Anchor";
 
 const CallToActionSection = styled.div`
-  padding-top: 50px;
   padding-bottom: 50px;
 
   @media (min-width: 1380px) {
-    padding-top: 60px;
     padding-bottom: 60px;
   }
 `;
@@ -24,6 +22,8 @@ const CallToActionList = styled.ul`
     flex-wrap: wrap;
   }
   @media (min-width: 992px) {
+    margin-left: -20px;
+    margin-right: -20px;
     justify-content: space-between;
   }
 `;
@@ -43,25 +43,33 @@ const CallToAction = styled.li`
       margin-bottom: 0;
     }
   }
+
   @media (min-width: 768px) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
+
+  @media (min-width: 992px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 `;
 
 const CallToActionText = styled(Text)`
   max-width: 320px;
-  padding-right: 20px;
 
-  @media (min-width: 992px) {
-    padding-right: 10px;
+  @media (max-width: 991px) {
+    padding-right: 20px;
   }
 
   @media (min-width: 1380px) {
     max-width: 400px;
-    padding-right: 0;
   }
+`;
+
+const Title = styled(HeadingThree)`
+  margin-top: 0;
 `;
 
 const CallToActions = ({ data }) => (
@@ -69,7 +77,7 @@ const CallToActions = ({ data }) => (
     <CallToActionList>
       {data.map(cta => (
         <CallToAction key={cta.heading}>
-          <HeadingThree>{cta.heading}</HeadingThree>
+          <Title>{cta.heading}</Title>
           <CallToActionText margin>{cta.description}</CallToActionText>
           <CallToActionAnchor to={cta.linkURL}>Read More</CallToActionAnchor>
         </CallToAction>
