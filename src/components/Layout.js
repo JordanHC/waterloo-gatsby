@@ -7,6 +7,7 @@ import { NavigationProvider } from "../context/NavigationContext";
 const theme = {
   darkColor: "#111111",
   white: "#ffffff",
+  inputColour: "rgba(255, 255, 255, 0.8)",
   navy: "#13151E",
   blue: "#04388E",
   normalTransition: "0.3s all ease-in-out",

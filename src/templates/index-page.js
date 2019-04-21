@@ -24,13 +24,15 @@ const LiftOff = styled.section`
     max-width: 1032px;
     margin: 0 auto;
     transform: translateY(-80px);
+    margin-bottom: -80px;
   }
 
   @media (min-width: 1380px) {
+    max-width: 1420px;
     padding-top: 100px;
     padding-bottom: 100px;
+    margin-bottom: -100px;
     transform: translateY(-100px);
-    max-width: 1420px;
   }
 `;
 
