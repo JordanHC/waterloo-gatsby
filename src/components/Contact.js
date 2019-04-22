@@ -18,7 +18,18 @@ const sharedFieldStyles = css`
   background: transparent;
 `;
 
-const ContactWrapper = styled.section``;
+const ContactWrapper = styled.section`
+  padding-bottom: 100px;
+  @media (min-width: 768px) {
+    padding-bottom: 120px;
+  }
+  @media (min-width: 992px) {
+    padding-bottom: 140px;
+  }
+  @media (min-width: 1380px) {
+    padding-bottom: 180px;
+  }
+`;
 
 const Form = styled.form`
   margin-top: 40px;
@@ -41,7 +52,7 @@ const Field = styled.div`
 
   @media (min-width: 1380px) {
     ${props => (props.isTextArea ? `margin-top: 42px` : ``)};
-    ${props => (props.large ? `margin-top: 70px` : ``)};
+    ${props => (props.large ? `margin-top: 74px` : ``)};
   }
 
   &:first-child {
@@ -70,6 +81,9 @@ const TextArea = styled.textarea`
   resize: none;
   padding-top: 10px;
   ${sharedFieldStyles}
+  :invalid {
+    box-shadow: none;
+  }
   @media (min-width: 1380px) {
     font-size: 16px;
     height: 110px;

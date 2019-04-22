@@ -10,6 +10,7 @@ const Button = styled.button`
   color: ${props => props.theme.white};
   background: ${props => props.theme.blue};
   transition: ${props => props.theme.normalTransition};
+  cursor: pointer;
 
   @media (min-width: 992px) {
     padding: 14px 26px;
@@ -20,7 +21,7 @@ const Button = styled.button`
   @media (min-width: 1380px) {
     font-size: 16px;
     line-height: 16px;
-    padding: 15px 30px;
+    padding: 15px 40px;
   }
 
   &:hover {
