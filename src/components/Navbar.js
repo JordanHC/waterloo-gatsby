@@ -31,11 +31,6 @@ const NavigationList = styled.ul`
 `;
 
 const NavigationItem = styled.li`
-  ${props =>
-    props.contact
-      ? ` a { background: ${props.theme.navy} };
-      `
-      : ``}
   &:first-child {
     a {
       @media (max-width: 991px) {
@@ -43,7 +38,17 @@ const NavigationItem = styled.li`
       }
     }
   }
-  a {
+
+  @media (min-width: 992px) {
+    ${props => (props.isHomeLink ? `display:none` : ``)}
+  }
+
+  span {
+    cursor: pointer;
+    background: ${props => props.theme.navy};
+  }
+  a,
+  span {
     display: block;
     font-size: 13px;
     text-decoration: none;
@@ -162,8 +167,22 @@ const Logo = styled.span`
   }
 `;
 
-function Navbar() {
+const Navbar = () => {
   const [{ isActive }, dispatch] = useNavigationValue();
+
+  function scrollToContact() {
+    const element = document.querySelector('form[name="contact"]');
+    element.scrollIntoView({ behavior: "smooth" });
+    toggleNavBar();
+  }
+
+  function toggleNavBar() {
+    dispatch({
+      type: "toggleNav",
+      isActive: !isActive
+    });
+  }
+
   return (
     <Navigation>
       <NavContainer>
@@ -174,12 +193,7 @@ function Navbar() {
             </LinkLogo>
             <Burger
               className={isActive ? "is-active" : ""}
-              onClick={() =>
-                dispatch({
-                  type: "toggleNav",
-                  isActive: !isActive
-                })
-              }
+              onClick={toggleNavBar}
             >
               <BurgerLine top />
               <BurgerLine middle />
@@ -188,6 +202,9 @@ function Navbar() {
           </NavigationLogoBurger>
           <NavigationMenu className={isActive ? "is-active" : ""}>
             <NavigationList>
+              <NavigationItem isHomeLink>
+                <Link to="/">Home</Link>
+              </NavigationItem>
               <NavigationItem>
                 <Link to="/history">History</Link>
               </NavigationItem>
@@ -198,7 +215,7 @@ function Navbar() {
                 <Link to="/latest-news">Latest News</Link>
               </NavigationItem>
               <NavigationItem contact>
-                <Link to="/contact">Contact</Link>
+                <span onClick={scrollToContact}>Contact</span>
               </NavigationItem>
             </NavigationList>
           </NavigationMenu>
@@ -206,6 +223,6 @@ function Navbar() {
       </NavContainer>
     </Navigation>
   );
-}
+};
 
 export default Navbar;
