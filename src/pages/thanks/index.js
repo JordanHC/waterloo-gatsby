@@ -1,15 +1,27 @@
 import React from "react";
+import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
+import Thanks from "./thanks";
 
-export default () => (
-  <Layout>
-    <section className="section">
-      <div className="container">
-        <div className="content">
-          <h1>Thank you!</h1>
-          <p>This is a custom thank you page for form submissions</p>
-        </div>
-      </div>
-    </section>
-  </Layout>
-);
+export default ({ data }) => {
+  console.log(data);
+  return <Thanks data={data} />;
+};
+
+export const query = graphql`
+  query ThanksQuery {
+    allMarkdownRemark(
+      filter: { frontmatter: { templateKey: { eq: "thanks" } } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            heading
+            subheading
+          }
+        }
+      }
+    }
+  }
+`;

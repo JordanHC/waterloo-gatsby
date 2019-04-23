@@ -103,3 +103,15 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: Image, name: image, widget: image }
           - { label: "Body", name: "body", widget: "markdown" }
+      - file: "src/pages/thanks/index.md"
+        label: "Thank You page (Contact Form)"
+        name: "thanks"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "thanks",
+            }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: Sub Heading, name: subheading, widget: "text" }
