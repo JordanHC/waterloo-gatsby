@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { ThanksPageTemplate } from "../../pages/thanks";
+import { ThanksTemplate } from "../../pages/thanks/thanks";
 
 const ThanksPagePreview = ({ entry, widgetFor }) => (
-  <ThanksPageTemplate
-    title={entry.getIn(["data", "title"])}
-    content={widgetFor("body")}
+  <ThanksTemplate
+    heading={entry.getIn(["data", "heading"])}
+    subheading={entry.getIn(["data", "subheading"])}
   />
 );
 

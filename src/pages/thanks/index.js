@@ -16,6 +16,13 @@ export const query = graphql`
       edges {
         node {
           frontmatter {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 2048, quality: 100) {
+                  ...GatsbyImageSharpFluid_tracedSVG
+                }
+              }
+            }
             title
             heading
             subheading

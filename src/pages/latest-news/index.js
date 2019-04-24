@@ -1,37 +1,35 @@
 import React from "react";
 
 import Layout from "../../components/Layout";
+import LiftOff from "../../components/ui/LiftOff";
+import Container from "../../components/ui/Container";
+import Title from "../../components/ui/Title";
+import TitleWrapper from "../../components/ui/TitleWrapper";
+import Banner from "../../components/ui/Banner";
+import Slant from "../../components/ui/Slant";
 import LatestNewsRoll from "../../components/LatestNewsRoll";
 
 export default class LatestNewsIndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <div
-          className="full-width-image-container margin-top-0"
+        <Banner
           style={{
-            backgroundImage: `url('/img/blog-index.jpg')`
+            backgroundImage: `url('/img/banner-small.png')`
           }}
         >
-          <h1
-            className="has-text-weight-bold is-size-1"
-            style={{
-              boxShadow: "0.5rem 0 0 #f40, -0.5rem 0 0 #f40",
-              backgroundColor: "#f40",
-              color: "white",
-              padding: "1rem"
-            }}
-          >
-            Latest News
-          </h1>
-        </div>
-        <section className="section">
-          <div className="container">
-            <div className="content">
-              <LatestNewsRoll />
-            </div>
-          </div>
-        </section>
+          <Container>
+            <TitleWrapper>
+              <Title noMargin>Latest News</Title>
+            </TitleWrapper>
+          </Container>
+          <Slant />
+        </Banner>
+        <LiftOff>
+          <Container>
+            <LatestNewsRoll />
+          </Container>
+        </LiftOff>
       </Layout>
     );
   }

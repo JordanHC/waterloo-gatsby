@@ -114,4 +114,5 @@ collections:
               default: "thanks",
             }
           - { label: "Heading", name: "heading", widget: "string" }
+          - { label: Image, name: image, widget: image }
           - { label: Sub Heading, name: subheading, widget: "text" }

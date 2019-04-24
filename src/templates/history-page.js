@@ -3,25 +3,43 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import LiftOff from "../components/ui/LiftOff";
+import Container from "../components/ui/Container";
+import Title from "../components/ui/Title";
+import TitleWrapper from "../components/ui/TitleWrapper";
+import Banner from "../components/ui/Banner";
+import Slant from "../components/ui/Slant";
 
-export const HistoryPageTemplate = ({ title, content, contentComponent }) => {
+export const HistoryPageTemplate = ({
+  title,
+  content,
+  contentComponent,
+  image
+}) => {
   const PageContent = contentComponent || Content;
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <>
+      <Banner
+        style={{
+          backgroundImage: `url(${
+            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+          })`
+        }}
+      >
+        <Container>
+          <TitleWrapper>
+            <Title noMargin>{title}</Title>
+          </TitleWrapper>
+        </Container>
+        <Slant />
+      </Banner>
+      <LiftOff>
+        <Container>
+          <PageContent className="content" content={content} />
+        </Container>
+      </LiftOff>
+    </>
   );
 };
 
@@ -39,6 +57,7 @@ const HistoryPage = ({ data }) => {
       <HistoryPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
+        image={post.frontmatter.image}
         content={post.html}
       />
     </Layout>
@@ -57,6 +76,13 @@ export const historyPageQuery = graphql`
       html
       frontmatter {
         title
+        image {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid_tracedSVG
+            }
+          }
+        }
       }
     }
   }
