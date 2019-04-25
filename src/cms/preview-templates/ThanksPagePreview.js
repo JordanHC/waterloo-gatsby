@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { ThanksTemplate } from "../../pages/thanks/thanks";
+import { ThanksTemplate } from "../../pages/thanks";
 
 const ThanksPagePreview = ({ entry, widgetFor }) => (
   <ThanksTemplate
