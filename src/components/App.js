@@ -21,6 +21,7 @@ const FakeBody = styled.div`
 `;
 
 const App = ({ children }) => {
+  // eslint-disable-next-line
   const [{ isActive }, dispatch] = useNavigationValue();
   const { title, description } = useSiteMetadata();
 

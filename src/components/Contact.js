@@ -24,10 +24,10 @@ const ContactWrapper = styled.section`
     padding-bottom: 120px;
   }
   @media (min-width: 992px) {
-    padding-bottom: 140px;
+    padding-bottom: 180px;
   }
   @media (min-width: 1380px) {
-    padding-bottom: 180px;
+    padding-bottom: 240px;
   }
 `;
 

@@ -13,13 +13,13 @@ const Banner = styled.div`
     padding-bottom: 38px;
   }
   @media (min-width: 992px) {
-    padding-top: 50px;
-    padding-bottom: 130px;
+    padding-top: 60px;
+    padding-bottom: 140px;
   }
 
   @media (min-width: 1380px) {
-    padding-top: 80px;
-    padding-bottom: 180px;
+    padding-top: 100px;
+    padding-bottom: 200px;
   }
 `;
 

@@ -11,12 +11,12 @@ const FooterSection = styled.footer`
   @media (min-width: 992px) {
     transform: translateY(-80px);
     margin-bottom: -80px;
-    padding-top: 160px;
+    padding-top: 240px;
   }
   @media (min-width: 1380px) {
     transform: translateY(-100px);
     margin-bottom: -100px;
-    padding-top: 240px;
+    padding-top: 300px;
   }
 `;
 

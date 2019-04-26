@@ -9,8 +9,8 @@ const LiftOff = styled.section`
   padding-top: 75px;
   padding-bottom: 75px;
   @media (min-width: 768px) {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: ${props => props.smaller ? `60px` : `80px`};
+    padding-bottom: ${props => props.smaller ? `60px` : `80px`};
   }
   @media (min-width: 992px) {
     max-width: 1032px;
@@ -21,8 +21,8 @@ const LiftOff = styled.section`
 
   @media (min-width: 1380px) {
     max-width: 1420px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: ${props => props.smaller ? `70px` : `100px`};
+    padding-bottom: ${props => props.smaller ? `70px` : `100px`};
     margin-bottom: -100px;
     transform: translateY(-100px);
   }

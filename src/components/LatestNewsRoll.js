@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { Link, graphql, StaticQuery } from "gatsby";
+import { Link } from "gatsby";
 import Text from "./ui/Text";
 import Anchor from "./ui/Anchor";
 
@@ -47,7 +47,7 @@ const Wrapper = styled.div`
 
 const ArticleLink = styled(Link)`
   @media (min-width: 992px) {
-    ${Article}:last-child & {
+    ${Article}:nth-child(even) & {
       order: 1;
     }
   }
@@ -55,18 +55,23 @@ const ArticleLink = styled(Link)`
 
 const Image = styled.img`
   max-width: 100%;
+  object-fit: cover;
   box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.5);
 
   @media (max-width: 767px) {
     width: 320px;
+    height: 164px;
   }
 
   @media (min-width: 992px) {
     width: 440px;
+    height: 244px;
   }
 
   @media (min-width: 1380px) {
     width: auto;
+    min-width: 580px;
+    height: 324px;
   }
 `;
 
@@ -104,12 +109,12 @@ const ArticleAnchor = styled(Anchor)`
 const ArticleText = styled.div`
   @media (min-width: 992px) {
     flex-basis: 50%;
-    ${Article}:first-child & {
+    ${Article}:nth-child(even) & {
       padding-left: 50px;
       padding-right: 40px;
     }
 
-    ${Article}:last-child & {
+    ${Article}:nth-child(odd) & {
       padding-right: 50px;
       padding-left: 40px;
       order: 0;
@@ -161,38 +166,4 @@ LatestNewsRoll.propTypes = {
   })
 };
 
-export default () => (
-  <StaticQuery
-    query={graphql`
-      query LatestNewsQuery {
-        allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "news-post" } } }
-          limit: 2
-        ) {
-          edges {
-            node {
-              excerpt(pruneLength: 220)
-              id
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-                templateKey
-                image {
-                  childImageSharp {
-                    fluid(maxWidth: 580, quality: 100) {
-                      ...GatsbyImageSharpFluid_tracedSVG
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    `}
-    render={(data, count) => <LatestNewsRoll data={data} count={count} />}
-  />
-);
+export default LatestNewsRoll;
