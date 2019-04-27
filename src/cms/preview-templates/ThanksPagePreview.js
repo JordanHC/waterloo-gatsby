@@ -1,12 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
+import CmsWrapper from '../CmsWrapper';
 import { ThanksTemplate } from "../../pages/thanks";
 
 const ThanksPagePreview = ({ entry, widgetFor }) => (
-  <ThanksTemplate
-    heading={entry.getIn(["data", "heading"])}
-    subheading={entry.getIn(["data", "subheading"])}
-  />
+  <CmsWrapper>
+    <ThanksTemplate
+      heading={entry.getIn(["data", "heading"])}
+      subheading={entry.getIn(["data", "subheading"])}
+      image={entry.getIn(["data", "image"])}
+    />
+  </CmsWrapper>
 );
 
 ThanksPagePreview.propTypes = {

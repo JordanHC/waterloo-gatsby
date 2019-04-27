@@ -11,7 +11,6 @@ import LatestNewsRoll from "../../components/LatestNewsRoll";
 
 class LatestNewsIndexPage extends React.Component {
   render() {
-    console.log(this);
     return (
       <Layout>
         <Banner

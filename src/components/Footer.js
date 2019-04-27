@@ -104,15 +104,15 @@ const Footer = class extends React.Component {
                   <g
                     id="Page-1"
                     stroke="none"
-                    stroke-width="1"
+                    strokeWidth="1"
                     fill="#ffffff"
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                   >
                     <g
                       id="Desktop-HD-Copy-2"
                       transform="translate(-1121.000000, -3381.000000)"
                       fill="#FFFFFF"
-                      fill-rule="nonzero"
+                      fillRule="nonzero"
                     >
                       <g
                         id="Footer"

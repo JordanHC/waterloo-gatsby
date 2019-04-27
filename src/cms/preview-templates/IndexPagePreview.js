@@ -1,21 +1,23 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
+import getCtas from '../../utils/getCtas';
+import CmsWrapper from '../CmsWrapper';
 import { IndexPageTemplate } from '../../templates/index-page'
 
 const IndexPagePreview = ({ entry, getAsset }) => {
-  const data = entry.getIn(['data']).toJS()
-
+  const data = entry.getIn(['data']).toJS();
+  const callToActions = getCtas( data, "cta" );
   if (data) {
     return (
-      <IndexPageTemplate
-        image={data.image}
-        title={data.title}
-        heading={data.heading}
-        subheading={data.subheading}
-        description={data.description}
-        intro={data.intro || { blurbs: [] }}
-        mainpitch={data.mainpitch || {}}
-      />
+      <CmsWrapper>
+        <IndexPageTemplate
+          image={data.image}
+          title={data.title}
+          heading={data.heading}
+          subheading={data.subheading}
+          callToActions={callToActions}
+        />
+      </CmsWrapper>
     )
   } else {
     return (<div>Loading...</div>)

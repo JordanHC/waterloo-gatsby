@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import styled from "styled-components";
 import Layout from "../components/Layout";
+import getCtas from '../utils/getCtas';
 import CallToActions from "../components/CallToActions";
 import LatestNewsHome from "../components/LatestNewsHome";
 import Container from "../components/ui/Container";
@@ -109,7 +110,8 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
-  const callToActions = [];
+  const callToActions = getCtas( data, "cta" );
+
 
   Object.keys(frontmatter).forEach(key => {
     if (key.includes("cta")) {

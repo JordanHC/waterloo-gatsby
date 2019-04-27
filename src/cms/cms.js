@@ -9,5 +9,5 @@ import ThanksPagePreview from "./preview-templates/ThanksPagePreview";
 CMS.registerPreviewTemplate("index", IndexPagePreview);
 CMS.registerPreviewTemplate("history", HistoryPagePreview);
 CMS.registerPreviewTemplate("how-to-help", HowToHelpPagePreview);
-CMS.registerPreviewTemplate("news-post", NewsPostPreview);
+CMS.registerPreviewTemplate("latest-news", NewsPostPreview);
 CMS.registerPreviewTemplate("thanks", ThanksPagePreview);
