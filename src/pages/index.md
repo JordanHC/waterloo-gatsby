@@ -8,19 +8,17 @@ subheading: >-
   destructive  development proposals.
 cta1:
   description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco..
+    Waterloo Dock. One of the great docks that grew out of Liverpool’s
+    transformation from a backwater town trading with Ireland, to the dominant
+    mercantile city of an Empire. Our campaign is about recognizing..
   heading: What We Are Fighting For
-  linkType: internal
   linkURL: /history
 cta2:
   description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco..
+    Designed by Jesse Hartley to accommodate large sailing ships, it mainly
+    focussed on the transAtlantic trade between Liverpool, the USA and West
+    Indies. These links with the USA made Waterloo the ideal location for..
   heading: History Of Waterloo Dock
-  linkType: internal
   linkURL: /history
 cta3:
   description: >-
@@ -28,7 +26,6 @@ cta3:
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco..
   heading: Looking To Help?
-  linkType: internal
   linkURL: /how-to-help
 ---
 
