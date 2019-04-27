@@ -14,6 +14,8 @@ const Text = styled.p`
   }
 
   @media (min-width: 992px) {
+    font-size: 14px;
+    line-height: 24px;
     ${props =>
       props.margin
         ? `

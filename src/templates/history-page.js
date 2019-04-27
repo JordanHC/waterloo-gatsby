@@ -34,7 +34,7 @@ export const HistoryPageTemplate = ({
         </Container>
         <Slant />
       </Banner>
-      <LiftOff>
+      <LiftOff smaller>
         <Container>
           <PageContent className="content" content={content} />
         </Container>

@@ -34,7 +34,7 @@ export const HowToHelpPageTemplate = ({
         </Container>
         <Slant />
       </Banner>
-      <LiftOff>
+      <LiftOff smaller>
         <Container>
           <PageContent className="content" content={content} />
         </Container>

@@ -3,11 +3,11 @@ import styled from "styled-components";
 const LiftOff = styled.section`
   position: relative;
   z-index: 200;
+  padding-bottom: ${props => props.smaller ? `60px` : `75px`};
+  padding-top: ${props => props.smaller ? `35px` : `75px`};
   background: ${props => props.theme.white};
   box-shadow: ${props => props.theme.textShadow};
   border-radius: 4px;
-  padding-top: 75px;
-  padding-bottom: 75px;
   @media (min-width: 768px) {
     padding-top: ${props => props.smaller ? `60px` : `80px`};
     padding-bottom: ${props => props.smaller ? `60px` : `80px`};
