@@ -3,11 +3,9 @@ templateKey: history-page
 title: Our History
 image: /img/banner-small.png
 ---
-### History
+Waterloo Dock. One of the great docks that grew out of Liverpool’s transformation from a backwater town trading with Ireland, to the dominant mercantile city of an Empire. Our campaign is about recognizing that fact, and fighting to preserve the heritage of Waterloo Dock, which is part of the UNESCO World Heritage site.
 
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
-
-### Single origin
+## Single origin
 
 Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
 
