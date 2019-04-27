@@ -1,7 +1,7 @@
 ---
 templateKey: how-to-help-page
 title: How To Help
-image: /img/banner.png
+image: /img/banner-small.png
 ---
 ### How To Help
 Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
