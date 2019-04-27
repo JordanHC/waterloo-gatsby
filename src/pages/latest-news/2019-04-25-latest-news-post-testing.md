@@ -9,25 +9,27 @@ description: >-
 tags:
   - test
 ---
----
-title: I'm a markdown file!
----
+# You can have lists
 
-Markdown is pretty cool if you ask me.
+The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
 
-## You can have lists
+While this is going to be a big change for professional coffee tasters, it means a lot to you as a consumer as well. We’ll explain how the wheel came to be, how pros use it and what the flavors actually mean.
+
+# You can have lists
 
 ### Numbered
+
 1. me first!
 2. I'm second!
 3. third :(
 
 ### Unordered
+
 * Cheese
 * is actually
 * really good
 
-And **lots** of other *fun* stuff.
+And **lots** of other _fun_ stuff.
 
 > Block quotes are
 > written like so.
@@ -35,44 +37,37 @@ And **lots** of other *fun* stuff.
 > They can span multiple paragraphs,
 > if you like.
 
+The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
+
+While this is going to be a big change for professional coffee tasters, it means a lot to you as a consumer as well. We’ll explain how the wheel came to be, how pros use it and what the flavors actually mean.
+
 ## Enable additional syntax with Markdown-it plugins
 
 You can add additional Markdown-it plugins with
 [a custom markdown loader](https://github.com/gatsbyjs/gatsby-starter-kitchen-sink/blob/master/loaders/markdown-loader/index.js#L22-L32).
 
 ### Subscript
-H~2~0
+
+H\~2\~0
 
 ### Footnote
-Here is an inline note.^[Inlines notes are easier to write, since
+
+Here is an inline note.^\[Inlines notes are easier to write, since
 you don't have to pick an identifier and move down to type the
 note.]
 
-### Definition lists
-Term 1
 
-:   Definition 1
 
-Term 2 with *inline markup*
+```
+    { some code, part of Definition 2 }
+```
 
-:   Definition 2
 
-        { some code, part of Definition 2 }
-
-    Third paragraph of definition 2.
-
-### Abbreviation
-*[HTML]: Hyper Text Markup Language
-*[W3C]:  World Wide Web Consortium
-The HTML specification
-is maintained by the W3C.
-
-### Add a class or other attributes to content.
-here be dragons {.warning}
 
 ## Some code
 
 Javascript
+
 ```javascript
 function $initHighlight(block, flags) {
   try {
@@ -89,6 +84,7 @@ function $initHighlight(block, flags) {
 ```
 
 Python
+
 ```python
 import time
 # Quick, count to ten!
@@ -97,4 +93,3 @@ for i in range(10):
     time.sleep(0.5)
     print i
 ```
-
