@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const Text = styled.p`
-  font-size: 13px;
-  line-height: 22px;
+  font-size: 14px;
+  line-height: 23px;
   ${props => (props.margin ? `margin-top: 0;` : ``)}
 
   @media (min-width: 768px) {
@@ -14,8 +14,8 @@ const Text = styled.p`
   }
 
   @media (min-width: 992px) {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 15px;
+    line-height: 26px;
     ${props =>
       props.margin
         ? `
@@ -29,8 +29,8 @@ const Text = styled.p`
         ? `
     margin-bottom: 56px;`
         : ``}
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 32px;
   }
 `;
 export default Text;

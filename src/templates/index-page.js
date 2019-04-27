@@ -159,19 +159,16 @@ export const pageQuery = graphql`
         cta1 {
           heading
           description
-          linkType
           linkURL
         }
         cta2 {
           heading
           description
-          linkType
           linkURL
         }
         cta3 {
           heading
           description
-          linkType
           linkURL
         }
       }

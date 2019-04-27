@@ -50,12 +50,7 @@ const App = ({ children }) => {
           sizes="16x16"
         />
 
-        <link
-          rel="mask-icon"
-          href="/img/safari-pinned-tab.svg"
-          color="#ff4400"
-        />
-        <meta name="theme-color" content="#fff" />
+        <meta name="theme-color" content="#111" />
 
         <meta property="og:type" content="business.business" />
         <meta property="og:title" content={title} />

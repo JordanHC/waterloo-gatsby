@@ -65,7 +65,7 @@ const Image = styled.img`
 
   @media (min-width: 992px) {
     width: 440px;
-    height: 244px;
+    height: 260px;
   }
 
   @media (min-width: 1380px) {
@@ -110,12 +110,12 @@ const ArticleText = styled.div`
   @media (min-width: 992px) {
     flex-basis: 50%;
     ${Article}:nth-child(even) & {
-      padding-left: 50px;
+      padding-left: 40px;
       padding-right: 40px;
     }
 
     ${Article}:nth-child(odd) & {
-      padding-right: 50px;
+      padding-right: 40px;
       padding-left: 40px;
       order: 0;
     }

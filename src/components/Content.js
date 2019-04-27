@@ -3,6 +3,11 @@ import PropTypes from 'prop-types';
 import styled from "styled-components";
 
 const Markdown = styled.div`
+
+  @media (min-width: 992px) {
+    padding: 0 10px;
+  }
+
    & > *:first-child {
     margin-top: 0;
   }
@@ -18,15 +23,15 @@ const Markdown = styled.div`
   }
 
   p, li, pre {
-    font-size: 13px;
-    line-height: 22px;
+    font-size: 14px;
+    line-height: 23px;
     @media (min-width: 992px) {
-      font-size: 14px;
-      line-height: 24px;
+      font-size: 15px;
+      line-height: 26px;
     }
     @media (min-width: 1380px) {
-      font-size: 16px;
-      line-height: 28px;
+      font-size: 18px;
+      line-height: 32px;
     }
   }
 
