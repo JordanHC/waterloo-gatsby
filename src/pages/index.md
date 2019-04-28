@@ -29,11 +29,11 @@ cta2:
 cta3:
   description: |
     Sign Our Petition
-
+     
     Follow us on Twitter
-
+     
     Help us to Fundraise
-
+     
     Spread the Word!
   heading: Looking To Help?
   linkURL: /how-to-help
