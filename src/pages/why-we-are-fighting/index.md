@@ -1,6 +1,6 @@
 ---
 templateKey: why-we-are-fighting-page
-title: What are we fighting for
+title: What we are fighting for
 image: /img/banner-small.png
 ---
 ### To Save West Waterloo Dock
