@@ -111,12 +111,12 @@ const ArticleText = styled.div`
     flex-basis: 50%;
     ${Article}:nth-child(even) & {
       padding-left: 40px;
-      padding-right: 40px;
+      padding-right: 52px;
     }
 
     ${Article}:nth-child(odd) & {
       padding-right: 40px;
-      padding-left: 40px;
+      padding-left: 52px;
       order: 0;
     }
   }
