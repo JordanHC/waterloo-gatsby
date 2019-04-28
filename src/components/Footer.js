@@ -85,7 +85,7 @@ const Footer = class extends React.Component {
         <Contact />
         <FooterText>
           <FooterSpan>
-            &copy; {new Date().getFullYear()} - Jordan Hale-Clowes
+            &copy; {new Date().getFullYear()} - Save Waterloo Dock
           </FooterSpan>
           <FooterSpan containsSvg>
             <a
