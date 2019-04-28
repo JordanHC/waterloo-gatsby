@@ -19,8 +19,11 @@ cta1:
 cta2:
   description: >-
     Designed by Jesse Hartley to accommodate large sailing ships, it mainly
-    focused on the transatlantic trade between Liverpool, the USA and West
-    Indies. These links with the USA made Waterloo the ideal location for..
+    focused on the transatlantic trade between Liverpool and the USA and West
+    Indies. These links with the USA made Waterloo the ideal location for ALL
+    the American Packet Ships (so-called because they carried packets of mail)
+    and these, in turn, became the main carriers of human traffic in the early
+    years of transatlantic travel..
   heading: History Of Waterloo Dock
   linkURL: /history
 cta3:
@@ -31,7 +34,7 @@ cta3:
 
     Help us to Fundraise
 
-    Spread the word!
+    Spread the Word!
   heading: Looking To Help?
   linkURL: /how-to-help
 ---
