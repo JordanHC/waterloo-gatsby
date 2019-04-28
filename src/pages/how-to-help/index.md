@@ -17,6 +17,10 @@ Please write to Liverpool City Council with your objections to planning applicat
 
 @WaterlooDock
 
+### Fundraising
+
+Please contact us to find out how you can support us in fundraising or giving a voluntary contribution to support the campaign.
+
 ### Raise Awareness of Our Aim
 
 Please tell your family, friends and anybody that cares about our city. Let's save Liverpool's heritage!
