@@ -75,6 +75,13 @@ module.exports = {
         purgeOnly: ["/all.scss"] // applies purging only on the bulma css file
       }
     }, // must be after other CSS plugins
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-92018536-3",
+        head: true
+      },
+    },
     "gatsby-plugin-netlify" // make sure to keep it last in the array
   ],
   // for avoiding CORS while developing Netlify Functions locally

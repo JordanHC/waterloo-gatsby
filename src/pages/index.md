@@ -12,7 +12,7 @@ cta1:
     Liverpool’s transformation from a backwater town trading with Ireland, to
     the dominant mercantile city of an Empire..
   heading: What We Are Fighting For
-  linkURL: /history
+  linkURL: /why-we-are-fighting
 cta2:
   description: >-
     Designed by Jesse Hartley to accommodate large sailing ships, it mainly

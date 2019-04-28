@@ -206,7 +206,7 @@ const Navbar = () => {
                 <Link to="/">Home</Link>
               </NavigationItem>
               <NavigationItem>
-                <Link to="/why-we-are-fighting">Why Are We Fighting?</Link>
+                <Link to="/why-we-are-fighting">What we are fighting for</Link>
               </NavigationItem>
               <NavigationItem>
                 <Link to="/history">History</Link>
