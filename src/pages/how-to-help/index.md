@@ -7,7 +7,7 @@ image: /img/banner-small.png
 
 http://chng.it/QMNVkJfrms
 
-At the end of last year, planning proposal 18F/3247 was submitted to Liverpool City. It proposes to infill most of the historic West Waterloo Dock in order to build six, high rise blocks of 646 apartments, which will almost totally obscure the views of the historic, Grade II listed Waterloo Warehouse from the river and the Wirral. Heritage vandalism on a truly epic scale. 
+Sign our petition by clicking the link above to show your support in objecting to this proposed planning application.
 
 ### Write to Liverpool City Council
 
