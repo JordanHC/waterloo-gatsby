@@ -9,4 +9,4 @@ description: >-
 tags:
   - test
 ---
-It proposes to infill most of the historic West Waterloo Dock, in order to build six, high rise blocks of 646 apartments, which will almost totally obscure the views of the historic, Grade II listed Waterloo Warehouse from the river and the Wirral. Heritage vandalism on a truly epic scale.
+Residents of Waterloo Warehouse and Waterloo Quay were made aware of this proposal and united to object to the infill of the most of the historic West Waterloo Dock, in order to build six, high rise blocks of 646 apartments.
