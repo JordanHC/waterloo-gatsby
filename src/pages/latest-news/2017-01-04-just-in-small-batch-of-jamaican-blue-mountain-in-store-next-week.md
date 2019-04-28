@@ -1,7 +1,7 @@
 ---
 templateKey: news-post
 title: Save Waterloo Dock Twitter Launched
-image: /img/news-bg.jpg
+image: /img/cruise-ww-dock.jpg
 date: 2017-01-04T15:04:10.000Z
 description: Save Waterloo Dock have launched a Twitter Account
 tags:
