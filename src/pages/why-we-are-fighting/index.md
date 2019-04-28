@@ -9,4 +9,4 @@ At the end of last year (2018) a planning proposal 18F/3247 was submitted to Liv
 
 Heritage vandalism on a truly epic scale. 
 
-This proposal goes against all the Heritage pledges in the Liverpool Local Plan 2013-2033 and most of the undertakings in the SPD in support of World Heritage status. It seems inconceivable that it will put the already at risk World Heritage status in even graver jeopardy.
+This proposal goes against all the Heritage pledges in the Liverpool Local Plan 2013-2033 and most of the undertakings in the Liverpool City Council World Heritage Site Supplementary Planning Document in support of World Heritage status. It seems inconceivable that it will put the already at risk World Heritage status in even graver jeopardy.
