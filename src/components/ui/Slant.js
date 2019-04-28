@@ -10,7 +10,7 @@ const Slant = styled.div`
   min-height: 320px;
 
   @media (min-width: 992px) {
-    left: -50%;
+    left: ${props => props.home ? `-50%` : `-46%`};
     height: 100%;
     width: 100%;
   }

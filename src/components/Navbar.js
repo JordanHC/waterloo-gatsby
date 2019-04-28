@@ -57,6 +57,7 @@ const NavigationItem = styled.li`
 
     @media (max-width: 991px) {
       padding: 15px;
+      line-height: 22px;
       border-top: ${props => props.theme.navBorderValue};
     }
 

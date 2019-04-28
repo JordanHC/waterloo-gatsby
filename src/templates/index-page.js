@@ -89,7 +89,7 @@ export const IndexPageTemplate = ({
             <Subtitle>{subheading}</Subtitle>
           </BannerTextWrap>
         </Container>
-        <Slant />
+        <Slant home />
       </BannerImage>
     </Banner>
     <LiftOff>
