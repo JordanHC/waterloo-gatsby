@@ -10,7 +10,7 @@ collections:
     label: "Latest News"
     folder: "src/pages/latest-news"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
       - {
           label: "Template Key",
@@ -86,6 +86,19 @@ collections:
               name: "templateKey",
               widget: "hidden",
               default: "history-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: Image, name: image, widget: image }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "src/pages/why-we-are-fighting/index.md"
+        label: "Why We Are Fighting"
+        name: "why-we-are-fighting"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "why-we-are-fighting-page",
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: Image, name: image, widget: image }
