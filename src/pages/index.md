@@ -26,8 +26,8 @@ cta3:
 
 
     Together let’s put a stop to the planned development (18F/3247) which
-    proposes to infill most of the historic West Waterloo Dock, in order to
-    build six, high rise blocks of 646 apartments. 
+    proposes to infill most of the historic West Waterloo Dock in order to build
+    six, high rise blocks of 646 apartments. 
   heading: Looking To Help?
   linkURL: /how-to-help
 ---
