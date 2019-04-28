@@ -19,4 +19,4 @@ Please write to Liverpool City Council with your objections to planning applicat
 
 ### Raise Awareness of Our Aim
 
-Please tell your family, friends and anybody that cares about our city. Let's save our heritage!
+Please tell your family, friends and anybody that cares about our city. Let's save Liverpool's heritage!
