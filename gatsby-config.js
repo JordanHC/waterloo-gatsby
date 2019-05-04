@@ -82,6 +82,19 @@ module.exports = {
         head: true
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Save Waterloo Dock`,
+        short_name: `SWD`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#003A9C`,
+        display: `standalone`,
+        icon: `static/img/icon.png`,
+      },
+    },
+    "gatsby-plugin-offline",
     "gatsby-plugin-netlify" // make sure to keep it last in the array
   ],
   // for avoiding CORS while developing Netlify Functions locally
