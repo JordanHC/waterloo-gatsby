@@ -33,11 +33,6 @@ const App = ({ children }) => {
         <meta name="description" content={description} />
 
         <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/img/apple-touch-icon.png"
-        />
-        <link
           rel="icon"
           type="image/png"
           href="/img/favicon-32x32.png"

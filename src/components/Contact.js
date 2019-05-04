@@ -13,6 +13,7 @@ const sharedFieldStyles = css`
   border-top-width: 0;
   border-left-width: 0;
   border-right-width: 0;
+  border-radius: 0;
   border-bottom-width: 1px;
   border-bottom-color: ${props => props.theme.inputColour};
   background: transparent;
