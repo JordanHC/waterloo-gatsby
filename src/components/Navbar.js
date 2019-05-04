@@ -194,6 +194,7 @@ const Navbar = () => {
             </LinkLogo>
             <Burger
               className={isActive ? "is-active" : ""}
+              aria-label="menu"
               onClick={toggleNavBar}
             >
               <BurgerLine top />
