@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: "Save Waterloo Dock",
     description:
-      "This campaign aims to protect Liverpool’s unique heritage against destructive development proposals."
+      "This campaign aims to protect Liverpool’s unique heritage against destructive development proposals. Especially that concerning Waterloo Dock."
   },
   plugins: [
     "gatsby-plugin-react-helmet",

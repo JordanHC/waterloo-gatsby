@@ -172,6 +172,7 @@ export default class Index extends React.Component {
                   <Input
                     type={"text"}
                     name={"name"}
+                    aria-label="name"
                     placeholder={`Name..`}
                     onChange={this.handleChange}
                     id={"name"}
@@ -182,6 +183,7 @@ export default class Index extends React.Component {
                   <Input
                     type={"email"}
                     name={"email"}
+                    aria-label="email"
                     placeholder={`Email..`}
                     onChange={this.handleChange}
                     id={"email"}
@@ -192,6 +194,7 @@ export default class Index extends React.Component {
               <Field isTextArea>
                 <TextArea
                   name={"message"}
+                  aria-label="message"
                   placeholder={`Your Message..`}
                   onChange={this.handleChange}
                   id={"message"}
