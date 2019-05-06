@@ -3,7 +3,6 @@ import Helmet from "react-helmet";
 import styled from "styled-components";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import "./all.scss";
 import useSiteMetadata from "./SiteMetadata";
 import { useNavigationValue } from "../context/NavigationContext";
 

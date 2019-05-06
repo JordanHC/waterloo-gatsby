@@ -1,7 +1,7 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import App from "../components/App";
-import "./all.scss";
+import "./normalise.css";
 import theme from '../utils/theme';
 import { NavigationProvider } from "../context/NavigationContext";
 
