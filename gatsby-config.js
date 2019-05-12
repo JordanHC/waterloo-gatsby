@@ -9,6 +9,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
     `gatsby-plugin-styled-components`,
+    "gatsby-plugin-sass",
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: "gatsby-source-filesystem",
@@ -68,6 +69,13 @@ module.exports = {
       }
     },
     {
+      resolve: "gatsby-plugin-purgecss", // purges all unused/unreferenced css rules
+      options: {
+        develop: true, // Activates purging in npm run develop
+        purgeOnly: ["/all.scss"] // applies purging only on the bulma css file
+      }
+    }, // must be after other CSS plugins
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-92018536-3",
@@ -92,15 +100,15 @@ module.exports = {
   ],
   // for avoiding CORS while developing Netlify Functions locally
   // read more: https://www.gatsbyjs.org/docs/api-proxy/#advanced-proxying
-  // developMiddleware: app => {
-  //   app.use(
-  //     "/.netlify/functions/",
-  //     proxy({
-  //       target: "http://localhost:9000",
-  //       pathRewrite: {
-  //         "/.netlify/functions/": ""
-  //       }
-  //     })
-  //   );
-  // }
+  developMiddleware: app => {
+    app.use(
+      "/.netlify/functions/",
+      proxy({
+        target: "http://localhost:9000",
+        pathRewrite: {
+          "/.netlify/functions/": ""
+        }
+      })
+    );
+  }
 };
