@@ -96,6 +96,15 @@ module.exports = {
       },
     },
     "gatsby-plugin-offline",
+    {
+      resolve: "gatsby-plugin-sentry",
+      options: {
+        dsn: "https://afb407e7c35e4debb76e98b37a26b7ec@sentry.io/1457608",
+        // Optional settings, see https://docs.sentry.io/clients/node/config/#optional-settings
+        environment: process.env.NODE_ENV,
+        enabled: (() => ["production", "stage"].indexOf(process.env.NODE_ENV) !== -1)()
+      }
+    },
     "gatsby-plugin-netlify" // make sure to keep it last in the array
   ],
   // for avoiding CORS while developing Netlify Functions locally

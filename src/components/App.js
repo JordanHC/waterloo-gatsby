@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 import styled from "styled-components";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import ErrorBoundary from "../utils/errorBoundary";
 import "./all.scss";
 import useSiteMetadata from "./SiteMetadata";
 import { useNavigationValue } from "../context/NavigationContext";
@@ -39,9 +40,11 @@ const App = ({ children }) => {
         <meta property="og:image" content="/img/og-image.jpg" />
 
       </Helmet>
-      <Navbar />
-      <div>{children}</div>
-      <Footer />
+      <ErrorBoundary>
+        <Navbar />
+          <div>{children}</div>
+        <Footer />
+      </ErrorBoundary>
     </FakeBody>
   );
 };
