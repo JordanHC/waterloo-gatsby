@@ -6,9 +6,9 @@ date: 2019-05-15T19:41:39.279Z
 description: >
   Today the Save Waterloo Dock Campaign Team spoke on the Roger Phillips Show,
   sharing our website and contact details and bringing Liverpool People up to
-  date with what’s happening.
+  date with what’s happening. It's all good!
 ---
-It’s all good. Our research team are doing great in preparation for our challenge in terms of what we believe is a flawed process and if it comes to it, judicial review.
+Our research team are doing great in preparation for our challenge in terms of what we believe is a flawed process and if it comes to it, judicial review.
 
 We are now aware that Historic England wrote to Liverpool City Council in January 2019, a six page warning, in summary it highlighted:
 
