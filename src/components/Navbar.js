@@ -68,7 +68,7 @@ const NavigationItem = styled.li`
       transition: ${props => props.theme.normalTransition};
     }
 
-    @media (min-width: 1380px) {
+    @media (min-width: 1600px) {
       padding: 40px 30px;
       font-size: 18px;
     }
@@ -163,7 +163,7 @@ const Logo = styled.span`
     font-size: 18px;
   }
 
-  @media (min-width: 1380px) {
+  @media (min-width: 1600px) {
     font-size: 24px;
   }
 `;
@@ -206,6 +206,9 @@ const Navbar = () => {
             <NavigationList>
               <NavigationItem isHomeLink>
                 <Link to="/">Home</Link>
+              </NavigationItem>
+              <NavigationItem>
+                <Link to="/campaign-updates">Campaign Updates</Link>
               </NavigationItem>
               <NavigationItem>
                 <Link to="/why-we-are-fighting">What we are fighting for</Link>
