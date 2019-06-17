@@ -21,7 +21,7 @@ const NavigationLogoBurger = styled.div`
 `;
 
 const NavigationList = styled.ul`
-  @media (max-width: 991px) {
+  @media (max-width: 1199px) {
     flex-direction: column;
   }
   display: flex;
@@ -39,7 +39,7 @@ const NavigationItem = styled.li`
     }
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     ${props => (props.isHomeLink ? `display:none` : ``)}
   }
 
@@ -47,6 +47,7 @@ const NavigationItem = styled.li`
     cursor: pointer;
     background: ${props => props.theme.navy};
   }
+
   a,
   span {
     display: block;
@@ -55,13 +56,13 @@ const NavigationItem = styled.li`
     text-transform: uppercase;
     color: ${props => props.theme.white};
 
-    @media (max-width: 991px) {
+    @media (max-width: 1199px) {
       padding: 15px;
       line-height: 22px;
       border-top: ${props => props.theme.navBorderValue};
     }
 
-    @media (min-width: 992px) {
+    @media (min-width: 1200px) {
       padding: 30px 20px;
       font-size: 14px;
       border-left: ${props => props.theme.navBorderValue};
@@ -74,7 +75,7 @@ const NavigationItem = styled.li`
     }
 
     &:hover {
-      @media (min-width: 992px) {
+      @media (min-width: 1200px) {
         background: ${props => props.theme.blueFaded};
       }
     }
@@ -99,19 +100,19 @@ const NavigationMenu = styled.div`
 `;
 
 const Burger = styled.div`
-  @media (max-width: 991px) {
+  @media (max-width: 1199px) {
     padding: 20px;
     border-left: 1px solid rgba(255, 255, 255, 0.2);
     background: ${props => props.theme.navy};
     cursor: pointer;
   }
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     display: none;
   }
 `;
 
 const BurgerLine = styled.span`
-  @media (max-width: 991px) {
+  @media (max-width: 1199px) {
     height: 2px;
     width: ${props => (props.middle ? "20px" : "24px")};
     display: block;
@@ -137,7 +138,7 @@ const BurgerLine = styled.span`
 `;
 
 const NavigationWrapper = styled.div`
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     display: flex;
     justify-content: space-between;
   }
@@ -158,7 +159,7 @@ const Logo = styled.span`
     color: ${props => props.theme.white};
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     padding-left: 30px;
     font-size: 18px;
   }
