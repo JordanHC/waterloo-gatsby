@@ -84,7 +84,7 @@ const NavigationItem = styled.li`
 
 const NavigationMenu = styled.div`
   transition: ${props => props.theme.normalTransition};
-  @media (max-width: 991px) {
+  @media (max-width: 1199px) {
     background: ${props => props.theme.navy};
     position: fixed;
     top: 0;
@@ -93,7 +93,7 @@ const NavigationMenu = styled.div`
     height: 100%;
   }
   &.is-active {
-    @media (max-width: 991px) {
+    @media (max-width: 1199px) {
       right: 0;
     }
   }

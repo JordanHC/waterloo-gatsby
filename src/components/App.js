@@ -15,7 +15,7 @@ const FakeBody = styled.div`
   overflow: hidden;
   transition: ${props => props.theme.normalTransition};
   &.is-active {
-    @media (max-width: 991px) {
+    @media (max-width: 1199px) {
       left: -200px;
     }
   }
