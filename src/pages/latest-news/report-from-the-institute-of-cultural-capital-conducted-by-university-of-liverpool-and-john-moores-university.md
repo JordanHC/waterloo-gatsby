@@ -1,7 +1,7 @@
 ---
 templateKey: news-post
 title: "Report from the Institute of Cultural Capital conducted by University of Liverpool and John Moores University.\_"
-image: /img/dscn1994.jpg
+image: /img/dscn2004.jpg
 date: 2019-06-15T07:20:37.314Z
 description: 'A report by the Institute of Cultural Capital '
 ---
