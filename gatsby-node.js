@@ -1,8 +1,8 @@
-import { resolve } from 'path';
-import { createFilePath } from 'gatsby-source-filesystem';
-import { fmImagesToRelative } from 'gatsby-remark-relative-images';
+const path = require('path');
+const { createFilePath } = require('gatsby-source-filesystem');
+const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 
-export function createPages({ actions, graphql }) {
+exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
 
   return graphql(`
@@ -38,7 +38,7 @@ export function createPages({ actions, graphql }) {
         createPage({
           path: edge.node.fields.slug,
           tags: edge.node.frontmatter.tags,
-          component: resolve(
+          component: path.resolve(
             `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
           ),
           // additional data can be passed via context
@@ -49,9 +49,9 @@ export function createPages({ actions, graphql }) {
       }
     });
   });
-}
+};
 
-export function onCreateNode({ node, actions, getNode }) {
+exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
   fmImagesToRelative(node); // convert image paths for gatsby images
 
@@ -63,4 +63,4 @@ export function onCreateNode({ node, actions, getNode }) {
       value
     });
   }
-}
+};
