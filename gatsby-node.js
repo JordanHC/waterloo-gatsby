@@ -1,7 +1,6 @@
-const _ = require("lodash");
-const path = require("path");
-const { createFilePath } = require("gatsby-source-filesystem");
-const { fmImagesToRelative } = require("gatsby-remark-relative-images");
+const path = require('path');
+const { createFilePath } = require('gatsby-source-filesystem');
+const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
@@ -33,10 +32,10 @@ exports.createPages = ({ actions, graphql }) => {
 
     posts.forEach(edge => {
       const id = edge.node.id;
-      if (edge.node.frontmatter.templateKey === "thanks") {
+      if (edge.node.frontmatter.templateKey === 'thanks') {
         return false;
       }
-      if (edge.node.frontmatter.templateKey !== "thanks") {
+      if (edge.node.frontmatter.templateKey !== 'thanks') {
         createPage({
           path: edge.node.fields.slug,
           tags: edge.node.frontmatter.tags,
