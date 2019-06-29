@@ -116,6 +116,19 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: Image, name: image, widget: image }
           - { label: "Body", name: "body", widget: "markdown" }
+      - file: "src/pages/campaign-updates/index.md"
+        label: "Campaign Updates"
+        name: "campaign-updates"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "campaign-updates-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: Image, name: image, widget: image }
+          - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/thanks/index.md"
         label: "Thank You page (Contact Form)"
         name: "thanks"
