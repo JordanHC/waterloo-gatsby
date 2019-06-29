@@ -1,8 +1,8 @@
-const path = require('path');
-const { createFilePath } = require('gatsby-source-filesystem');
-const { fmImagesToRelative } = require('gatsby-remark-relative-images');
+import { resolve } from 'path';
+import { createFilePath } from 'gatsby-source-filesystem';
+import { fmImagesToRelative } from 'gatsby-remark-relative-images';
 
-exports.createPages = ({ actions, graphql }) => {
+export function createPages({ actions, graphql }) {
   const { createPage } = actions;
 
   return graphql(`
@@ -34,12 +34,11 @@ exports.createPages = ({ actions, graphql }) => {
       const id = edge.node.id;
       if (edge.node.frontmatter.templateKey === 'thanks') {
         return false;
-      }
-      if (edge.node.frontmatter.templateKey !== 'thanks') {
+      } else {
         createPage({
           path: edge.node.fields.slug,
           tags: edge.node.frontmatter.tags,
-          component: path.resolve(
+          component: resolve(
             `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
           ),
           // additional data can be passed via context
@@ -50,9 +49,9 @@ exports.createPages = ({ actions, graphql }) => {
       }
     });
   });
-};
+}
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
+export function onCreateNode({ node, actions, getNode }) {
   const { createNodeField } = actions;
   fmImagesToRelative(node); // convert image paths for gatsby images
 
@@ -64,4 +63,4 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       value
     });
   }
-};
+}
