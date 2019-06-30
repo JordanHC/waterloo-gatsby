@@ -1,21 +1,20 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Helmet from "react-helmet";
-import { graphql } from "gatsby";
-import Layout from "../components/Layout";
-import Container from "../components/ui/Container";
-import Title from "../components/ui/Title";
-import Banner from "../components/ui/Banner";
-import TitleWrapper from "../components/ui/TitleWrapper";
-import Slant from "../components/ui/Slant";
-import LiftOff from "../components/ui/LiftOff";
-import Content, { HTMLContent } from "../components/Content";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import { graphql } from 'gatsby';
+import Layout from '../components/Layout';
+import Container from '../components/ui/Container';
+import Title from '../components/ui/Title';
+import Banner from '../components/ui/Banner';
+import TitleWrapper from '../components/ui/TitleWrapper';
+import Slant from '../components/ui/Slant';
+import LiftOff from '../components/ui/LiftOff';
+import Content, { HTMLContent } from '../components/Content';
 
 export const NewsPostTemplate = ({
   content,
   contentComponent,
   description,
-  tags,
   title,
   helmet
 }) => {
@@ -28,23 +27,23 @@ export const NewsPostTemplate = ({
           backgroundImage: `url('/img/banner-small.png')`
         }}
       >
-      {helmet || ""}
-      <Container>
-        <TitleWrapper>
-          <Title noMargin>{title}</Title>
-        </TitleWrapper>
-      </Container>
-      <Slant />
-    </Banner>
-    <LiftOff smaller>
-      <Container>
-        {description && description.length ? (
-          <PostContent content={`<p>${description}</p>`} />
-        ) : null }
-        <PostContent content={content} />
-      </Container>
-    </LiftOff>
-  </>
+        {helmet || ''}
+        <Container>
+          <TitleWrapper>
+            <Title noMargin>{title}</Title>
+          </TitleWrapper>
+        </Container>
+        <Slant />
+      </Banner>
+      <LiftOff smaller>
+        <Container>
+          {description && description.length ? (
+            <PostContent content={`<p>${description}</p>`} />
+          ) : null}
+          <PostContent content={content} />
+        </Container>
+      </LiftOff>
+    </>
   );
 };
 
@@ -66,15 +65,14 @@ const NewsPost = ({ data }) => {
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | News">
+          <Helmet titleTemplate='%s | News'>
             <title>{`${post.frontmatter.title}`}</title>
             <meta
-              name="description"
+              name='description'
               content={`${post.frontmatter.description}`}
             />
           </Helmet>
         }
-        tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
     </Layout>
@@ -98,7 +96,6 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
-        tags
       }
     }
   }
