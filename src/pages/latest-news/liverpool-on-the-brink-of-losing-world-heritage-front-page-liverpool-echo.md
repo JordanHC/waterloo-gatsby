@@ -3,7 +3,7 @@ templateKey: news-post
 title: >-
   Liverpool on the brink of losing World Heritage Status - Front Page Liverpool
   Echo
-image: /img/banner-small.png
+image: /img/cruise-ww-dock.jpg
 date: 2019-06-30T08:43:39.534Z
 description: >
   The Liverpool Echo has confirmed our worst fears. But we fight on as West
