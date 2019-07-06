@@ -3,6 +3,7 @@ var proxy = require("http-proxy-middleware");
 module.exports = {
   siteMetadata: {
     title: "Save Waterloo Dock",
+    siteUrl: `https://www.savewaterloodock.com`,
     description:
       "This campaign aims to protect Liverpool’s unique heritage against destructive development proposals. Especially that concerning Waterloo Dock."
   },
@@ -67,6 +68,8 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`
       }
     },
+    "gatsby-plugin-sitemap",
+    'gatsby-plugin-robots-txt',
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -99,17 +102,4 @@ module.exports = {
     },
     "gatsby-plugin-netlify" // make sure to keep it last in the array
   ],
-  // for avoiding CORS while developing Netlify Functions locally
-  // read more: https://www.gatsbyjs.org/docs/api-proxy/#advanced-proxying
-  // developMiddleware: app => {
-  //   app.use(
-  //     "/.netlify/functions/",
-  //     proxy({
-  //       target: "http://localhost:9000",
-  //       pathRewrite: {
-  //         "/.netlify/functions/": ""
-  //       }
-  //     })
-  //   );
-  // }
 };
