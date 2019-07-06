@@ -1,14 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Markdown = styled.div`
-
-  @media (min-width: 992px) {
-    padding: 0 10px;
-  }
-
-   & > *:first-child {
+  & > *:first-child {
     margin-top: 0;
   }
 
@@ -22,7 +17,9 @@ const Markdown = styled.div`
     }
   }
 
-  p, li, pre {
+  p,
+  li,
+  pre {
     font-size: 14px;
     line-height: 23px;
     @media (min-width: 992px) {
@@ -81,7 +78,10 @@ const Markdown = styled.div`
     }
   }
 
-  h3, h4, h5, h6 {
+  h3,
+  h4,
+  h5,
+  h6 {
     font-size: 16px;
     @media (min-width: 992px) {
       font-size: 18px;
@@ -91,7 +91,13 @@ const Markdown = styled.div`
     }
   }
 
-  h2, h3, p, ol, ul, blockquote, pre {
+  h2,
+  h3,
+  p,
+  ol,
+  ul,
+  blockquote,
+  pre {
     margin-top: 24px;
     margin-bottom: 24px;
     @media (min-width: 992px) {
@@ -103,23 +109,19 @@ const Markdown = styled.div`
       margin-bottom: 28px;
     }
   }
-
-
 `;
 
 export const HTMLContent = ({ content, className }) => (
   <Markdown dangerouslySetInnerHTML={{ __html: content }} />
-)
+);
 
-const Content = ({ content, className }) => (
-  <Markdown>{content}</Markdown>
-)
+const Content = ({ content, className }) => <Markdown>{content}</Markdown>;
 
 Content.propTypes = {
   content: PropTypes.node,
-  className: PropTypes.string,
-}
+  className: PropTypes.string
+};
 
-HTMLContent.propTypes = Content.propTypes
+HTMLContent.propTypes = Content.propTypes;
 
-export default Content
+export default Content;

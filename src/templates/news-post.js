@@ -6,6 +6,7 @@ import Layout from '../components/Layout';
 import Container from '../components/ui/Container';
 import Title from '../components/ui/Title';
 import Banner from '../components/ui/Banner';
+import DateAuthor from '../components/ui/DateAuthor';
 import TitleWrapper from '../components/ui/TitleWrapper';
 import Slant from '../components/ui/Slant';
 import LiftOff from '../components/ui/LiftOff';
@@ -16,6 +17,7 @@ export const NewsPostTemplate = ({
   contentComponent,
   description,
   title,
+  date,
   helmet
 }) => {
   const PostContent = contentComponent || Content;
@@ -37,6 +39,9 @@ export const NewsPostTemplate = ({
       </Banner>
       <LiftOff smaller>
         <Container>
+          <DateAuthor>
+            <p>By the Save Waterloo Dock Team</p> <p>{date}</p>
+          </DateAuthor>
           {description && description.length ? (
             <PostContent content={`<p>${description}</p>`} />
           ) : null}
@@ -52,6 +57,7 @@ NewsPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
+  date: PropTypes.string,
   helmet: PropTypes.object
 };
 
@@ -64,6 +70,7 @@ const NewsPost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
+        date={post.frontmatter.date}
         helmet={
           <Helmet titleTemplate='%s | News'>
             <title>{`${post.frontmatter.title}`}</title>
@@ -93,7 +100,7 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "DD MMMM, YYYY")
         title
         description
       }
