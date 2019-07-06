@@ -8,7 +8,7 @@ description: Support for Save Waterloo Dock Campaign
 ---
 There is a growing list of eminently credible objectors to the destruction of this Historic Dock. If this happens we will surely lose our World Heritage Status.
 
-UNESCO; English Heritage; Historic England; Merseyside Environmental Advisory Service; Places Matter; Local Historians including Dr Frank Caryle; Hidden Liverpool; Local Heritage Groups  and climate/environmental groups;
+UNESCO; English Heritage; Historic England; Merseyside Environmental Advisory Service; Local Historians including Dr Frank Caryle; Hidden Liverpool; Local Heritage Groups  and climate/environmental groups;
 
 Louise Ellman MP - Louise Ellman Liverpool’s MP for Liverpool Riverside had objected to the infill of West Waterloo Dock on three points:-
 
