@@ -1,9 +1,9 @@
-import React from "react";
-import { graphql, StaticQuery } from "gatsby";
-import styled from "styled-components";
-import LatestNewsRoll from "../components/LatestNewsRoll";
-import HeadingThree from "./ui/HeadingThree";
-import Anchor from "./ui/Anchor";
+import React from 'react';
+import styled from 'styled-components';
+import LatestNewsRoll from '../components/LatestNewsRoll';
+import GetNewsPostLimit from '../components/GetNewsPostLimit';
+import HeadingThree from './ui/HeadingThree';
+import Anchor from './ui/Anchor';
 
 const Wrapper = styled.div`
   padding-top: 60px;
@@ -48,43 +48,9 @@ const LatestNewsHome = ({ data }) => (
     <Title>Latest stories</Title>
     <LatestNewsRoll data={data} />
     <LinkWrap>
-      <Anchor to="/latest-news">View All News...</Anchor>
+      <Anchor to='/latest-news'>View All News...</Anchor>
     </LinkWrap>
   </Wrapper>
 );
 
-export default () => (
-  <StaticQuery
-    query={graphql`
-      query LatestNewsQuery {
-        allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "news-post" } } }
-          limit: 2
-        ) {
-          edges {
-            node {
-              excerpt(pruneLength: 220)
-              id
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-                templateKey
-                image {
-                  childImageSharp {
-                    fluid(maxWidth: 580, quality: 100) {
-                      ...GatsbyImageSharpFluid_tracedSVG
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    `}
-    render={(data, count) => <LatestNewsHome data={data} count={count} />}
-  />
-);
+export default () => GetNewsPostLimit(LatestNewsHome);
