@@ -1,5 +1,5 @@
 ---
-templateKey: how-to-help-page
+templateKey: standard-page
 title: How To Help
 image: /img/banner-small.png
 ---
@@ -11,7 +11,7 @@ Sign our petition by clicking the link above to show your support in objecting t
 
 ### Write to Liverpool City Council
 
-Please write to Liverpool City Council with your objections to planning application 18F/3247 with regards to the infill of West Waterloo Dock. You can also do this online at Liverpool.gov.uk quoting the application number. 
+Please write to Liverpool City Council with your objections to planning application 18F/3247 with regards to the infill of West Waterloo Dock. You can also do this online at Liverpool.gov.uk quoting the application number.
 
 ### Follow us on Twitter
 

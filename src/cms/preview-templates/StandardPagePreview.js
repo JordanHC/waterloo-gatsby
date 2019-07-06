@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { HistoryPageTemplate } from "../../templates/history-page";
+import { StandardPageTemplate } from "../../templates/standard-page";
 import CmsWrapper from '../CmsWrapper';
 
-const HistoryPagePreview = ({ entry, widgetFor }) => (
+const StandardPagePreview = ({ entry, widgetFor }) => (
   <CmsWrapper>
-    <HistoryPageTemplate
+    <StandardPageTemplate
       title={entry.getIn(["data", "title"])}
       image={entry.getIn(["data", "image"])}
       content={widgetFor("body")}
@@ -13,11 +13,11 @@ const HistoryPagePreview = ({ entry, widgetFor }) => (
   </CmsWrapper>
 );
 
-HistoryPagePreview.propTypes = {
+StandardPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func
   }),
   widgetFor: PropTypes.func
 };
 
-export default HistoryPagePreview;
+export default StandardPagePreview;
