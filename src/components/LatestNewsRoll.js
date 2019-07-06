@@ -1,9 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import { Link } from "gatsby";
-import Text from "./ui/Text";
-import Anchor from "./ui/Anchor";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Img from 'gatsby-image';
+import styled from 'styled-components';
+import { Link } from 'gatsby';
+import Text from './ui/Text';
+import Anchor from './ui/Anchor';
 
 const Article = styled.article`
   padding-left: 20px;
@@ -53,25 +54,27 @@ const ArticleLink = styled(Link)`
   }
 `;
 
-const Image = styled.img`
-  max-width: 100%;
-  object-fit: cover;
-  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.5);
+const Image = styled.div`
+  .gatsby-image-wrapper {
+    max-width: 100%;
+    object-fit: cover;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.5);
 
-  @media (max-width: 767px) {
-    width: 320px;
-    height: 164px;
-  }
+    @media (max-width: 767px) {
+      width: 320px;
+      height: 164px;
+    }
 
-  @media (min-width: 992px) {
-    width: 440px;
-    height: 260px;
-  }
+    @media (min-width: 992px) {
+      width: 440px;
+      height: 260px;
+    }
 
-  @media (min-width: 1380px) {
-    width: auto;
-    min-width: 580px;
-    height: 324px;
+    @media (min-width: 1380px) {
+      width: auto;
+      min-width: 580px;
+      height: 324px;
+    }
   }
 `;
 
@@ -133,14 +136,12 @@ class LatestNewsRoll extends React.Component {
           posts.map(({ node: post }) => (
             <Article key={post.id}>
               <ArticleLink to={post.fields.slug}>
-                <Image
-                  src={
-                    !!post.frontmatter.image.childImageSharp
-                      ? post.frontmatter.image.childImageSharp.fluid.src
-                      : post.frontmatter.image
-                  }
-                  alt={`${post.frontmatter.title}`}
-                />
+                <Image>
+                  <Img
+                    fluid={post.frontmatter.image.childImageSharp.fluid}
+                    alt={post.frontmatter.title}
+                  />
+                </Image>
               </ArticleLink>
               <ArticleText>
                 <Title>
