@@ -104,7 +104,6 @@ NewsPostTemplate.propTypes = {
 };
 
 const NewsPost = ({ data }) => {
-  console.log(data);
   const post = data.page;
 
   return (
