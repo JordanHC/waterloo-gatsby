@@ -2,7 +2,7 @@
 templateKey: news-post
 title: Save Waterloo Dock Petition Started
 image: /img/sunset-ww-dock.jpg
-date: 2017-01-04T15:04:10.000Z
+date: 2019-04-01T14:04:10.000Z
 description: >-
   The Save Waterloo Dock Petition was started to give Liverpool the opportunity
   to object to this development.
