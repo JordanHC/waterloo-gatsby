@@ -64,6 +64,9 @@ const Field = styled.div`
 const Input = styled.input`
   height: 36px;
   ${sharedFieldStyles}
+  @media (min-width: 992px) {
+    height: 48px;
+  }
   @media (min-width: 1380px) {
     height: 52px;
     font-size: 16px;
