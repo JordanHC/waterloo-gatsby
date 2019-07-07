@@ -1,6 +1,6 @@
 ---
 templateKey: news-post
-title: Support for Save Waterloo Dock is Growing
+title: SUPPORT FOR THE SAVE WATERLOO DOCK CAMPAIGN IS GROWING
 image: /img/fullsizeoutput_cf3.jpeg
 date: 2019-07-04T07:09:08.930Z
 description: |
