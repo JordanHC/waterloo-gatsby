@@ -92,7 +92,6 @@ module.exports = {
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ "content:encoded": edge.node.html }],
                 })
               })
             },
@@ -101,6 +100,7 @@ module.exports = {
                 allMarkdownRemark(
                   sort: { order: DESC, fields: [frontmatter___date] }
                   filter: { frontmatter: { templateKey: { eq: "news-post" } } }
+                  limit: 2
                 ) {
                   edges {
                     node {
@@ -116,7 +116,7 @@ module.exports = {
                 }
               }
             `,
-            output: "/rss.xml",
+            output: "/newsfeed.xml",
             title: "Save Waterloo Dock RSS Feed",
             // optional configuration to insert feed reference in pages:
             // if `string` is used, it will be used to create RegExp and then test if pathname of
