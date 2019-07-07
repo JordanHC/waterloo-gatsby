@@ -44,7 +44,7 @@ const LinkWrap = styled.div`
 `;
 
 const WideAnchor = styled(Anchor)`
-  padding: 12px 24px;
+  padding: 16px 24px;
 
   @media (min-width: 992px) {
     padding: 18px 28px;
