@@ -9,8 +9,5 @@ description: >-
 
 
   http://chng.it/QMNVkJfrms
-tags:
-  - brewing
-  - chemex
 ---
 The petition was started just a few weeks ago and already has over 1000 signatures.

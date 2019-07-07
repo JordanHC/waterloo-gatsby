@@ -2,15 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
+import Content, { HTMLContent } from "../components/Content";
 import LiftOff from "../components/ui/LiftOff";
 import Container from "../components/ui/Container";
 import Title from "../components/ui/Title";
 import TitleWrapper from "../components/ui/TitleWrapper";
 import Banner from "../components/ui/Banner";
 import Slant from "../components/ui/Slant";
-import Content, { HTMLContent } from "../components/Content";
 
-export const HowToHelpPageTemplate = ({
+export const StandardPageTemplate = ({
   title,
   content,
   contentComponent,
@@ -43,18 +43,18 @@ export const HowToHelpPageTemplate = ({
   );
 };
 
-HowToHelpPageTemplate.propTypes = {
+StandardPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func
 };
 
-const HowToHelpPage = ({ data }) => {
+const StandardPage = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
     <Layout>
-      <HowToHelpPageTemplate
+      <StandardPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         image={post.frontmatter.image}
@@ -64,14 +64,14 @@ const HowToHelpPage = ({ data }) => {
   );
 };
 
-HowToHelpPage.propTypes = {
+StandardPage.propTypes = {
   data: PropTypes.object.isRequired
 };
 
-export default HowToHelpPage;
+export default StandardPage;
 
-export const howToHelpPageQuery = graphql`
-  query HowToHelpPage($id: String!) {
+export const standardPageQuery = graphql`
+  query StandardPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {

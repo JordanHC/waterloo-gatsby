@@ -1,26 +1,56 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Helmet from "react-helmet";
-import { graphql } from "gatsby";
-import Layout from "../components/Layout";
-import Container from "../components/ui/Container";
-import Title from "../components/ui/Title";
-import Banner from "../components/ui/Banner";
-import TitleWrapper from "../components/ui/TitleWrapper";
-import Slant from "../components/ui/Slant";
-import LiftOff from "../components/ui/LiftOff";
-import Content, { HTMLContent } from "../components/Content";
+import { graphql } from 'gatsby';
+import PropTypes from 'prop-types';
+import Img from 'gatsby-image';
+import React from 'react';
+import Helmet from 'react-helmet';
+import styled from 'styled-components';
+import Content, { HTMLContent } from '../components/Content';
+import Layout from '../components/Layout';
+import Banner from '../components/ui/Banner';
+import Container from '../components/ui/Container';
+import DateAuthor from '../components/ui/DateAuthor';
+import LiftOff from '../components/ui/LiftOff';
+import Slant from '../components/ui/Slant';
+import Title from '../components/ui/Title';
+import NewsArea from '../components/NewsArea';
+import TitleWrapper from '../components/ui/TitleWrapper';
+
+const ConentWrapper = styled.div`
+  @media (min-width: 992px) {
+    display: flex;
+    justify-content: space-between;
+  }
+`;
+
+const LeftContent = styled.div`
+  @media (min-width: 992px) {
+    flex-basis: 60%;
+  }
+`;
+
+const RightContent = styled.div`
+  @media (min-width: 992px) {
+    flex-basis: 35%;
+  }
+`;
+
+const ImgWrapper = styled.div`
+  .gatsby-image-wrapper {
+    height: 260px;
+  }
+`;
 
 export const NewsPostTemplate = ({
   content,
   contentComponent,
   description,
-  tags,
   title,
-  helmet
+  date,
+  helmet,
+  image,
+  otherNews
 }) => {
   const PostContent = contentComponent || Content;
-
   return (
     <>
       <Banner
@@ -28,23 +58,38 @@ export const NewsPostTemplate = ({
           backgroundImage: `url('/img/banner-small.png')`
         }}
       >
-      {helmet || ""}
-      <Container>
-        <TitleWrapper>
-          <Title noMargin>{title}</Title>
-        </TitleWrapper>
-      </Container>
-      <Slant />
-    </Banner>
-    <LiftOff smaller>
-      <Container>
-        {description && description.length ? (
-          <PostContent content={`<p>${description}</p>`} />
-        ) : null }
-        <PostContent content={content} />
-      </Container>
-    </LiftOff>
-  </>
+        {helmet || ''}
+        <Container>
+          <TitleWrapper>
+            <Title noMargin>{title}</Title>
+          </TitleWrapper>
+        </Container>
+        <Slant />
+      </Banner>
+      <LiftOff smaller>
+        <Container>
+          <article>
+            <DateAuthor>
+              <p>By the Save Waterloo Dock Team</p> <p>{date}</p>
+            </DateAuthor>
+            <ConentWrapper>
+              <LeftContent>
+                {description && description.length ? (
+                  <PostContent content={`<p>${description}</p>`} />
+                ) : null}
+                <PostContent content={content} />
+              </LeftContent>
+              <RightContent>
+                <ImgWrapper>
+                  <Img fluid={image.childImageSharp.fluid} alt={title} />
+                </ImgWrapper>
+                <NewsArea otherNews={otherNews} />
+              </RightContent>
+            </ConentWrapper>
+          </article>
+        </Container>
+      </LiftOff>
+    </>
   );
 };
 
@@ -53,11 +98,13 @@ NewsPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
+  date: PropTypes.string,
+  image: PropTypes.object,
   helmet: PropTypes.object
 };
 
 const NewsPost = ({ data }) => {
-  const { markdownRemark: post } = data;
+  const post = data.page;
 
   return (
     <Layout>
@@ -65,17 +112,20 @@ const NewsPost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
+        date={post.frontmatter.date}
+        image={post.frontmatter.image}
+        id={post.frontmatter.id}
         helmet={
-          <Helmet titleTemplate="%s | News">
+          <Helmet titleTemplate='%s | News'>
             <title>{`${post.frontmatter.title}`}</title>
             <meta
-              name="description"
+              name='description'
               content={`${post.frontmatter.description}`}
             />
           </Helmet>
         }
-        tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        otherNews={data.others}
       />
     </Layout>
   );
@@ -90,15 +140,41 @@ NewsPost.propTypes = {
 export default NewsPost;
 
 export const pageQuery = graphql`
-  query NewsPostByID($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+  query NewsPostByID($id: String) {
+    page: markdownRemark(id: { eq: $id }) {
       id
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "DD MMMM, YYYY")
         title
         description
-        tags
+        image {
+          childImageSharp {
+            fluid(maxWidth: 480) {
+              ...GatsbyImageSharpFluid_tracedSVG
+            }
+          }
+        }
+      }
+    }
+    others: allMarkdownRemark(
+      filter: {
+        id: { ne: $id }
+        frontmatter: { templateKey: { eq: "news-post" } }
+      }
+      sort: { order: DESC, fields: [frontmatter___date] }
+      limit: 2
+    ) {
+      edges {
+        node {
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+          }
+        }
       }
     }
   }

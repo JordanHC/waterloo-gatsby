@@ -1,5 +1,5 @@
 ---
-templateKey: history-page
+templateKey: standard-page
 title: Our History
 image: /img/banner-small.png
 ---

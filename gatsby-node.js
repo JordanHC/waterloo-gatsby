@@ -1,4 +1,5 @@
 const path = require('path');
+const ChildProcess = require('child_process');
 const { createFilePath } = require('gatsby-source-filesystem');
 const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 
@@ -15,7 +16,6 @@ exports.createPages = ({ actions, graphql }) => {
               slug
             }
             frontmatter {
-              tags
               templateKey
             }
           }
@@ -34,11 +34,9 @@ exports.createPages = ({ actions, graphql }) => {
       const id = edge.node.id;
       if (edge.node.frontmatter.templateKey === 'thanks') {
         return false;
-      }
-      if (edge.node.frontmatter.templateKey !== 'thanks') {
+      } else {
         createPage({
           path: edge.node.fields.slug,
-          tags: edge.node.frontmatter.tags,
           component: path.resolve(
             `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
           ),
@@ -64,4 +62,10 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       value
     });
   }
+};
+
+exports.onPostBuild = () => {
+  ChildProcess.execSync(
+    "ps aux | grep jest | grep -v grep | awk '{print $2}' | xargs kill"
+  );
 };
