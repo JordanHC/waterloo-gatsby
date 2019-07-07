@@ -61,7 +61,7 @@ const Image = styled.div`
     box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.5);
 
     @media (max-width: 767px) {
-      width: 320px;
+      max-width: 320px;
       height: 164px;
     }
 

@@ -1,10 +1,13 @@
 import styled from 'styled-components';
 
 const DateAuthor = styled.div`
-  display: flex;
-  justify-content: space-between;
   color: ${props => props.theme.navy};
   font-weight: 600;
+
+  @media (min-width: 480px) {
+    justify-content: space-between;
+    display: flex;
+  }
 
   p {
     margin-top: 0;
