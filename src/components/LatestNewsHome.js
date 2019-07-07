@@ -43,12 +43,23 @@ const LinkWrap = styled.div`
   }
 `;
 
+const WideAnchor = styled(Anchor)`
+  padding: 12px 24px;
+
+  @media (min-width: 992px) {
+    padding: 18px 28px;
+  }
+  @media (min-width: 1380px) {
+    padding: 20px 36px;
+  }
+`;
+
 const LatestNewsHome = ({ data }) => (
   <Wrapper>
     <Title>Latest stories</Title>
     <LatestNewsRoll data={data} />
     <LinkWrap>
-      <Anchor to='/latest-news'>View All News...</Anchor>
+      <WideAnchor to='/latest-news'>View All News...</WideAnchor>
     </LinkWrap>
   </Wrapper>
 );
