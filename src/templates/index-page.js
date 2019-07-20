@@ -76,7 +76,6 @@ export const IndexPageTemplate = ({
 }) => (
   <>
     <Banner>
-      {console.log(image)}
       <BannerImage
         style={{
           backgroundImage: `url(${
