@@ -81,7 +81,7 @@ export const NewsPostTemplate = ({
               </LeftContent>
               <RightContent>
                 <ImgWrapper>
-                  <Img fluid={image.childImageSharp.fluid} alt={title} />
+                  <Img fluid={!!image.childImageSharp ? image.childImageSharp.fluid.src : image} alt={title} />
                 </ImgWrapper>
                 <NewsArea otherNews={otherNews} />
               </RightContent>
