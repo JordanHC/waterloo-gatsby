@@ -3,6 +3,12 @@ templateKey: standard-page
 title: How To Help
 image: /img/banner-small.png
 ---
+## **Make a Pledge to crowdfunder**
+
+www.crowdfunder.co.uk/savewaterloodock1834
+
+Money raised to go towards a legal challenge ansd associated costs
+
 ### Sign Our Petition!
 
 http://chng.it/QMNVkJfrms
