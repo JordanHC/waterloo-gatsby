@@ -1,5 +1,6 @@
 ---
 templateKey: news-post
+type: news
 title: Consultation? Enquiry TO LCC - consultees on Peels outline consent
 image: /img/banner-small.png
 date: 2019-06-24T09:39:08.914Z
@@ -23,7 +24,7 @@ In your email of June 13 ​2019 y​o​u state attendance of council employees
 
 
 
-Given the conference begins next week and registering for participation ended on June 1st 2019 we would expect a decision has now been made. We are aware of LCC s commitment to save our WHS and we share that ambition. 
+Given the conference begins next week and registering for participation ended on June 1st 2019 we would expect a decision has now been made. We are aware of LCC s commitment to save our WHS and we share that ambition.
 
 
 

@@ -1,5 +1,6 @@
 ---
 templateKey: news-post
+type: news
 title: Why filling in our dock is WRONG.
 image: /img/img_0883.jpg
 date: 2019-08-05T11:36:37.860Z
