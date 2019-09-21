@@ -1,5 +1,6 @@
 ---
 templateKey: news-post
+type: news
 title: 'Mayoral Lead for Heritage, Alice Bennett visits Waterloo Dock '
 image: /img/bigpic.jpg
 date: 2019-08-26T06:49:27.347Z
@@ -9,7 +10,7 @@ description: >-
   concerns and appreciate the impact on World Heritage Status and their
   treasured environment if 18F/3247 is approved.
 ---
-THE Save Waterloo Dock campaign had a  welcome visitor recently. 
+THE Save Waterloo Dock campaign had a  welcome visitor recently.
 
 Despite it being one of the wettest days of this soggy summer, Mayoral Heritage Lead Alice Bennett spent almost two hours with members of the campaign team, on a fact-finding visit to the place we all call home. She studied the site, heard about the dock’s history, listened to our concerns and talked to us at length about heritage issues and the city’s attitude to development.
 

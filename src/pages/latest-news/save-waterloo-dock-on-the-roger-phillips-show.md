@@ -1,5 +1,6 @@
 ---
 templateKey: news-post
+type: news
 title: Save Waterloo Dock on the Roger Phillips Show
 image: /img/2019-04-17-6-.png
 date: 2019-05-15T19:41:39.279Z

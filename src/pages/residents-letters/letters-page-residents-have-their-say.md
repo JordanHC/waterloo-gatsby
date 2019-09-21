@@ -1,5 +1,6 @@
 ---
 templateKey: news-post
+type: letters
 title: LETTERS PAGE - RESIDENTS HAVE THEIR SAY
 image: /img/og-image.jpg
 date: 2019-08-15T08:42:16.630Z

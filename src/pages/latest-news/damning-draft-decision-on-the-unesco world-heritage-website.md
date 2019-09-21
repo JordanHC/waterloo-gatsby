@@ -1,5 +1,6 @@
 ---
 templateKey: news-post
+type: news
 title: " DAMNING! DRAFT Decision on the UNESCO\_World Heritage Website "
 image: /img/64996361_10214495661289243_6983668629191524352_n.jpg
 date: 2019-07-01T07:13:48.532Z
@@ -43,7 +44,7 @@ NOTE:  An “ascertained threat” is far more serious than a ”perceived th
 
 
 
-The reference to the Paragraph 172 notifications from DCMS to which UNESCO WH Centre responded to DCMS with so called Paragraph #174 replies makes it clear that the planning applications relating to West Waterloo Doc            k both approved and under consideration (18F/3231 and 18F/3247) are deemed by UNESCO WH Centre to be unacceptable.                                                 
+The reference to the Paragraph 172 notifications from DCMS to which UNESCO WH Centre responded to DCMS with so called Paragraph #174 replies makes it clear that the planning applications relating to West Waterloo Doc            k both approved and under consideration (18F/3231 and 18F/3247) are deemed by UNESCO WH Centre to be unacceptable.
 
 
 

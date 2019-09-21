@@ -9,7 +9,7 @@ import Banner from "../../components/ui/Banner";
 import Slant from "../../components/ui/Slant";
 import LatestNewsRoll from "../../components/LatestNewsRoll";
 
-class LatestNewsIndexPage extends React.Component {
+class ResidentsLetterssIndexPage extends React.Component {
   render() {
     return (
       <Layout>
@@ -20,7 +20,7 @@ class LatestNewsIndexPage extends React.Component {
         >
           <Container>
             <TitleWrapper>
-              <Title noMargin>Latest News</Title>
+              <Title noMargin>Residents Letters</Title>
             </TitleWrapper>
           </Container>
           <Slant />
@@ -38,10 +38,10 @@ class LatestNewsIndexPage extends React.Component {
 export default () => (
   <StaticQuery
     query={graphql`
-      query AllNewsQuery {
+      query AllResidentLettersQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { type: { eq: "news" } } }
+          filter: { frontmatter: { type: { eq: "letters" } } }
         ) {
           edges {
             node {
@@ -66,6 +66,6 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <LatestNewsIndexPage data={data} />}
+    render={(data, count) => <ResidentsLetterssIndexPage data={data} />}
   />
 );

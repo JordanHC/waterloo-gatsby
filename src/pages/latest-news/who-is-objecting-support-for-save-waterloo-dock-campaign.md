@@ -1,5 +1,6 @@
 ---
 templateKey: news-post
+type: news
 title: Who is objecting? Support for Save Waterloo Dock Campaign
 image: /img/2019-04-17-6-.png
 date: 2019-06-24T09:53:44.998Z

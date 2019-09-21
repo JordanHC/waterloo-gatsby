@@ -1,5 +1,6 @@
 ---
 templateKey: news-post
+type: news
 title: >-
   SCOTTIE PRESS - BRITAINS LONGEST RUNNING COMMUNITY NEWSPAPER follows the Story
   of Save Waterloo Dock. scottiepressarchive.org.uk

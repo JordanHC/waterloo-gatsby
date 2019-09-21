@@ -1,5 +1,6 @@
 ---
 templateKey: news-post
+type: news
 title: "Report from the Institute of Cultural Capital conducted by University of Liverpool and John Moores University.\_"
 image: /img/dscn2004.jpg
 date: 2019-06-15T07:20:37.314Z
@@ -17,6 +18,6 @@ A loss of WHS in this study concludes: 
 
 ‘The evidence presented in this study suggests that such an outcome would be detrimental to Liverpool’s long-term development and the so far successful efforts to counter long-standing negative imagery associated with the city’
 
-The final concluding remarks state 
+The final concluding remarks state
 
 ‘it is still within the power of the city, not only to retain World Heritage status by reconciling the heritage and development camps but to reform the site in such a way that unlocks its vast potential and extends this value to neglected areas of the city’s periphery’.

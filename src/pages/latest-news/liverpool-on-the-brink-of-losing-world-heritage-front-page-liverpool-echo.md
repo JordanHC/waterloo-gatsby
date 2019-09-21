@@ -1,5 +1,6 @@
 ---
 templateKey: news-post
+type: news
 title: >-
   Liverpool on the brink of losing World Heritage Status - Front Page Liverpool
   Echo
