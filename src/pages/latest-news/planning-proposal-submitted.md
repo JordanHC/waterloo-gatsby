@@ -1,5 +1,6 @@
 ---
 templateKey: news-post
+type: news
 title: Planning Proposal Submitted
 image: /img/2019-04-17-6-.png
 date: 2019-04-25T14:33:13.886Z

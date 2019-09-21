@@ -1,11 +1,12 @@
 ---
 templateKey: news-post
+type: news
 title: 'Whats causing Liverpools development crisis? '
 image: /img/og-image.jpg
 date: 2019-08-11T11:49:42.512Z
 description: Development Crisis and Fractional sales.
 ---
-Some development crises have been caused by a combination of established ‘failures'-mismanagement, corruption; embezzlement but todays developer is 85% reliant on ‘fractional sales’, according to local journalist. 
+Some development crises have been caused by a combination of established ‘failures'-mismanagement, corruption; embezzlement but todays developer is 85% reliant on ‘fractional sales’, according to local journalist.
 
 Basically, ‘fractional sales’ rely on selling units before they are built, mostly abroad to big investment pension organisations. Developers are particularly vulnerable to this business ‘model’ and more importantly the communities who suffer from ‘fractional sales’ are being let down.
 
@@ -17,9 +18,9 @@ Mayor Anderson has set a panel headed by Mark Kitts (Foundations), to explore th
 
 Richard Kemp, CBE,  liberal democrat  has been a consistent critic of ‘fractional sales’.
 
-It has failed. Our City, politicians, architects and developers are all divided on the issue. 
+It has failed. Our City, politicians, architects and developers are all divided on the issue.
 
-Adam Hall, (Falconer Chester Hall,) a leading architect firm active in the City’s development believes these units are for RENT. 
+Adam Hall, (Falconer Chester Hall,) a leading architect firm active in the City’s development believes these units are for RENT.
 
 Greg Malouf (Romal Capital), a recently arrived developer believes these units will SELL, yet they are being advertised by estate agents for rent.
 
@@ -33,7 +34,7 @@ Mr Malouf’s development next to waterloo dock, (park central), which we didn�
 
 They are now offered as furnished accommodation with wifi throughout. They have all the characteristics of student accommodation. Alan Bevan, (city residential), believes any student developments north of Leeds Street will prove difficult to let.
 
-So the question to the politicians and the Local Planning Authority, as yet unanswered - who is actually going to live in the 27,500 1 and 2 bed units . 
+So the question to the politicians and the Local Planning Authority, as yet unanswered - who is actually going to live in the 27,500 1 and 2 bed units .
 
 Latest economic forecast indicates a downturn and a significant fear of recession in the UK. The global economy is also heading for recession. Our development crisis is about to get worse.
 

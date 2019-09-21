@@ -1,5 +1,6 @@
 ---
 templateKey: news-post
+type: news
 title: SUPPORT FOR THE SAVE WATERLOO DOCK CAMPAIGN IS GROWING
 image: /img/fullsizeoutput_cf3.jpeg
 date: 2019-07-04T07:09:08.930Z
@@ -34,7 +35,7 @@ And here’s the proof
 
 'Peter
 
-I am writing to make a representation on the above planning application. 
+I am writing to make a representation on the above planning application.
 
 The application is for a development in Kirkdale Ward, but borders Central Ward.  I have contacted by residents living in Princes Dock in Central Ward concerned about the impact of application on their residential amenity and the impact of the application on the World Heritage Site, which covers both wards.  My representation is in this context.
 

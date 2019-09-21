@@ -1,7 +1,8 @@
-import React from "react";
-import { Link } from "gatsby";
-import styled from "styled-components";
-import { useNavigationValue } from "../context/NavigationContext";
+import React, { useState } from 'react';
+import { Link } from 'gatsby';
+import styled from 'styled-components';
+import Burger from './Burger';
+import { useNavigationValue } from '../context/NavigationContext';
 
 const Navigation = styled.nav`
   position: relative;
@@ -39,13 +40,16 @@ const NavigationItem = styled.li`
     }
   }
 
+
   @media (min-width: 1200px) {
     ${props => (props.isHomeLink ? `display:none` : ``)}
   }
 
+  position: relative;
+
   span {
     cursor: pointer;
-    background: ${props => props.theme.navy};
+    ${props => props.contact && `background: ${props.theme.navy};`};
   }
 
   a,
@@ -80,6 +84,32 @@ const NavigationItem = styled.li`
       }
     }
   }
+
+  ${props =>
+    props.hasChildren &&
+    `
+
+    span {
+      position: relative;
+        @media (min-width: 1200px) {
+          display: block;
+          padding-right: 50px;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-4px);
+            margin-left: 10px;
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 8px solid ${props.theme.white};
+          }
+      }`
+  }
 `;
 
 const NavigationMenu = styled.div`
@@ -99,40 +129,28 @@ const NavigationMenu = styled.div`
   }
 `;
 
-const Burger = styled.div`
-  @media (max-width: 1199px) {
-    padding: 20px;
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
-    background: ${props => props.theme.navy};
-    cursor: pointer;
-  }
-  @media (min-width: 1200px) {
-    display: none;
-  }
-`;
+const NavigationSubMenu = styled.ul`
+  display: ${props => (props.show ? `block` : 'none')};
+  padding-left: 0;
 
-const BurgerLine = styled.span`
   @media (max-width: 1199px) {
-    height: 2px;
-    width: ${props => (props.middle ? "20px" : "24px")};
+    a {
+      padding-left: 30px !important;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    position: absolute;
     display: block;
-    background: ${props => props.theme.white};
-    margin: ${props => (props.middle ? "5px 0" : "0")};
-    transition: ${props => props.theme.burgerTransition};
-    .is-active & {
-      ${props => (props.middle ? `opacity: 0;` : ``)}
-      ${props =>
-        props.top
-          ? `
-        transform: translateY(7px) translateX(0) rotate(45deg);
-      `
-          : ``}
-      ${props =>
-        props.bottom
-          ? `
-        transform: translateY(-7px) translateX(0) rotate(-45deg);
-      `
-          : ``}
+    left: -9999em;
+    background: ${props => props.theme.darkColor};
+    ${NavigationItem}:hover & {
+      left: 0;
+    }
+
+    a {
+      border-top: ${props => props.theme.navBorderValue};
+      line-height: 22px;
     }
   }
 `;
@@ -172,15 +190,17 @@ const Logo = styled.span`
 const Navbar = () => {
   const [{ isActive }, dispatch] = useNavigationValue();
 
+  const [showSubMenu, setShowSubMenu] = useState(false);
+
   function scrollToContact() {
     const element = document.querySelector('form[name="contact"]');
-    element.scrollIntoView({ behavior: "smooth" });
+    element.scrollIntoView({ behavior: 'smooth' });
     toggleNavBar();
   }
 
   function toggleNavBar() {
     dispatch({
-      type: "toggleNav",
+      type: 'toggleNav',
       isActive: !isActive
     });
   }
@@ -190,38 +210,36 @@ const Navbar = () => {
       <NavContainer>
         <NavigationWrapper>
           <NavigationLogoBurger>
-            <LinkLogo to="/" title="Logo">
+            <LinkLogo to='/' title='Logo'>
               <Logo>Save Waterloo Dock</Logo>
             </LinkLogo>
-            <Burger
-              className={isActive ? "is-active" : ""}
-              aria-label="menu"
-              onClick={toggleNavBar}
-            >
-              <BurgerLine top />
-              <BurgerLine middle />
-              <BurgerLine bottom />
-            </Burger>
+            <Burger toggle={toggleNavBar} isActive={isActive} />
           </NavigationLogoBurger>
-          <NavigationMenu className={isActive ? "is-active" : ""}>
+          <NavigationMenu className={isActive ? 'is-active' : ''}>
             <NavigationList>
               <NavigationItem isHomeLink>
-                <Link to="/">Home</Link>
+                <Link to='/'>Home</Link>
               </NavigationItem>
               <NavigationItem>
-                <Link to="/campaign-updates">Campaign Updates</Link>
+                <Link to='/campaign-updates'>Campaign Updates</Link>
               </NavigationItem>
               <NavigationItem>
-                <Link to="/why-we-are-fighting">What we are fighting for</Link>
+                <Link to='/why-we-are-fighting'>What we are fighting for</Link>
               </NavigationItem>
               <NavigationItem>
-                <Link to="/history">History</Link>
+                <Link to='/history'>History</Link>
               </NavigationItem>
               <NavigationItem>
-                <Link to="/how-to-help">How To Help</Link>
+                <Link to='/how-to-help'>How To Help</Link>
               </NavigationItem>
-              <NavigationItem>
-                <Link to="/latest-news">Latest News</Link>
+              <NavigationItem hasChildren>
+                <span onClick={() => setShowSubMenu(!showSubMenu)}>
+                  News Centre
+                </span>
+                <NavigationSubMenu show={showSubMenu}>
+                  <Link to='/latest-news'>Latest News</Link>
+                  <Link to='/residents-letters'>Residents Letters</Link>
+                </NavigationSubMenu>
               </NavigationItem>
               <NavigationItem contact>
                 <span onClick={scrollToContact}>Contact</span>

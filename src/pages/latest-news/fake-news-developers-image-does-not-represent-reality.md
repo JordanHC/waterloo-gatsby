@@ -1,5 +1,6 @@
 ---
 templateKey: news-post
+type: news
 title: FAKE NEWS - DEVELOPERS IMAGE DOES NOT REPRESENT REALITY
 image: /img/2019-04-17-6-.png
 date: 2019-07-01T07:33:54.452Z
