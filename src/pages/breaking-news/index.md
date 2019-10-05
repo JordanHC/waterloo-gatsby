@@ -1,9 +1,8 @@
 ---
-templateKey: thanks
+templateKey: pop-up
 popup: true
 title: Latest
-image: /img/banner-small.png
-description: Add your small story here
+description: Testing
 close_text: Close
 active: false
 ---
