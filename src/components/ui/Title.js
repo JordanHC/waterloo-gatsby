@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const Title = styled.h1`
   margin: ${props => (props.noMargin ? `0` : `0 0 28px 0`)};
+  font-family: ${props => props.theme.secondaryFont};
   font-size: 22px;
   line-height: 34px;
   text-transform: uppercase;

@@ -9,7 +9,8 @@ const theme = {
   navBorderValue: '1px solid rgba(216,216,216,0.20)',
   blueFaded: 'rgba(0, 58, 156, 0.8)',
   textShadow: ' 0 2px 4px rgba(0, 0, 0, 0.5)',
-  normalShadow: ' 0 2px 4px rgba(0, 0, 0, 0.5)'
+  normalShadow: ' 0 2px 4px rgba(0, 0, 0, 0.5)',
+  secondaryFont: '"Raleway", sans-serif;'
 };
 
 export default theme;
