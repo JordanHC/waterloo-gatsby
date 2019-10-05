@@ -170,3 +170,12 @@ collections:
           - { label: "Heading", name: "heading", widget: "string" }
           - { label: Image, name: image, widget: image }
           - { label: Sub Heading, name: subheading, widget: "text" }
+      - file: "src/pages/breaking-news/index.md"
+        label: "Breaking News"
+        name: "breaking-news"
+        fields:
+          - { label: Pop Up, name: popup, widget: hidden }
+          - { label: Title Box Text, name: title, widget: string }
+          - { label: Description, name: description, widget: string }
+          - { label: Close Text, name: close_text, widget: string }
+          - { label: Should this show?, name: active, widget: boolean }

@@ -29,7 +29,7 @@ const NavigationList = styled.ul`
   padding: 0;
   margin: 0;
   list-style: none;
-`;
+  `;
 
 const NavigationItem = styled.li`
   &:first-child {
@@ -55,6 +55,7 @@ const NavigationItem = styled.li`
   a,
   span {
     display: block;
+    /* font-family: ${props => props.theme.secondaryFont}; */
     font-size: 13px;
     text-decoration: none;
     text-transform: uppercase;
@@ -170,6 +171,7 @@ const LinkLogo = styled(Link)`
 const Logo = styled.span`
   padding-left: 20px;
   text-transform: uppercase;
+  font-family: ${props => props.theme.secondaryFont};
   font-weight: 400;
   font-size: 14px;
   a,

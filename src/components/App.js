@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar';
 import ErrorBoundary from '../utils/errorBoundary';
 import useSiteMetadata from './SiteMetadata';
 import { useNavigationValue } from '../context/NavigationContext';
+import BreakingNews from './BreakingNews';
 
 const FakeBody = styled.div`
   position: relative;
@@ -42,6 +43,7 @@ const App = ({ children }) => {
         <Navbar />
         <div>{children}</div>
         <Footer />
+        <BreakingNews />
       </ErrorBoundary>
     </FakeBody>
   );
