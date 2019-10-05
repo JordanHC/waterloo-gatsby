@@ -80,11 +80,12 @@ const Latest = styled.span`
 
 
 const BreakingNewsView = ({ data }) => {
-  const [show, setShow] = useState(sessionStorage.getItem('showLatestNews') || true);
+  const windowGlobal = typeof window !== 'undefined' && window;
+  const [show, setShow] = useState(windowGlobal.sessionStorage.getItem('showLatestNews') || true);
 
   const setWhetherToShow = () => {
     setShow(!show);
-    sessionStorage.setItem('showLatestNews', false);
+    windowGlobal.sessionStorage.setItem('showLatestNews', false);
   }
 
   if (typeof data != undefined) {
