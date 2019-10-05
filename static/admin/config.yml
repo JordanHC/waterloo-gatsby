@@ -178,7 +178,7 @@ collections:
               label: "Template Key",
               name: "templateKey",
               widget: "hidden",
-              default: "thanks",
+              default: "pop-up",
             }
           - { label: Pop Up, name: popup, widget: hidden }
           - { label: Title Box Text, name: title, widget: string }

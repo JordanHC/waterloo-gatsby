@@ -79,7 +79,7 @@ const Latest = styled.span`
 `;
 
 
-const BreakingNewsView = ({ data }) => {
+export const BreakingNewsView = ({ data }) => {
   const windowGlobal = typeof window !== 'undefined' && window;
   if (windowGlobal) {
     const [show, setShow] = useState(windowGlobal.sessionStorage.getItem('showLatestNews') || true);
