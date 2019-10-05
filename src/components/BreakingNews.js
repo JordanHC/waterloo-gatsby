@@ -81,29 +81,31 @@ const Latest = styled.span`
 
 const BreakingNewsView = ({ data }) => {
   const windowGlobal = typeof window !== 'undefined' && window;
-  const [show, setShow] = useState(windowGlobal.sessionStorage.getItem('showLatestNews') || true);
+  if (windowGlobal) {
+    const [show, setShow] = useState(windowGlobal.sessionStorage.getItem('showLatestNews') || true);
 
-  const setWhetherToShow = () => {
-    setShow(!show);
-    windowGlobal.sessionStorage.setItem('showLatestNews', false);
-  }
+    const setWhetherToShow = () => {
+      setShow(!show);
+      windowGlobal.sessionStorage.setItem('showLatestNews', false);
+    }
 
-  if (typeof data != undefined) {
-    const info = data.markdownRemark.frontmatter;
-    console.log(info.active && show);
-    if (show == true && info.active) {
-      console.log(show);
-      return (
-        <Section>
-          <Upper>
-            <Latest>{info.title}</Latest>
-            <Close onClick={setWhetherToShow}>{info.close_text}</Close>
-          </Upper>
-          <Lower>
-            <LowerText>{info.description}</LowerText>
-          </Lower>
-        </Section>
-      );
+    if (typeof data != undefined) {
+      const info = data.markdownRemark.frontmatter;
+      console.log(info.active && show);
+      if (show == true && info.active) {
+        console.log(show);
+        return (
+          <Section>
+            <Upper>
+              <Latest>{info.title}</Latest>
+              <Close onClick={setWhetherToShow}>{info.close_text}</Close>
+            </Upper>
+            <Lower>
+              <LowerText>{info.description}</LowerText>
+            </Lower>
+          </Section>
+        );
+      }
     }
   }
 
