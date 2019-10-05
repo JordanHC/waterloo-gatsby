@@ -1,5 +1,5 @@
 ---
-templateKey: thanks
+templateKey: pop-up
 popup: true
 title: Latest
 description: Testing
