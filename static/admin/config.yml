@@ -22,7 +22,7 @@ collections:
           label: "type",
           name: "type",
           widget: "hidden",
-          default: "news-posts",
+          default: "news",
         }
       - { label: "Title", name: "title", widget: "string" }
       - { label: Image, name: image, widget: image }
