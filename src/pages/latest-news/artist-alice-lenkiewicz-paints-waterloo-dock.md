@@ -1,8 +1,8 @@
 ---
 templateKey: news-post
 type: news
-title: 'Artist Alice Lenkiewicz paints Waterloo dock'
-image: /img/img_1299.jpg
+title: Artist Alice Lenkiewicz paints Waterloo dock
+image: /img/fullsizeoutput_d98.jpeg
 date: 2019-08-26T07:31:09.410Z
 description: The beauty of Waterloo Dock through the vision of an Artist.
 ---
