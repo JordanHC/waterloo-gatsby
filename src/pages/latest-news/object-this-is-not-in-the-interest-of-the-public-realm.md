@@ -1,7 +1,7 @@
 ---
 templateKey: news-post
 type: news
-title: OBJECT. This is not in the interest of the public realm.
+title: OBJECT. THIS IS NOT IN THE INTERESTS OF THE PUBLIC REALM.
 image: /img/2019-12-07-2-.png
 date: 2019-12-07T09:40:12.787Z
 description: |
@@ -13,11 +13,7 @@ To do so please send objections to:
 
 peter.jones2@liverpool.gov.uk
 
-
-
-CC in local councillors and the CEO of Liverpool City Council:
-
-
+Copy in (CC) local councillors and the CEO of Liverpool City Council:
 
 joe.hanson@liverpool.gov.uk
 
