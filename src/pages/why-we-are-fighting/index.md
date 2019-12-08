@@ -13,6 +13,8 @@ This updated proposal continues to go against all the Heritage pledges in the Li
 
 The images below show the proposal and the planned site infill.
 
+![](/img/8.12.19.png)
+
 ![](/img/2019-12-07-2-.png "18F/3247 2019 Proposal")
 
 ![](/img/2019-12-07-3-.png "18F/3247 2019 Planned Infill")
