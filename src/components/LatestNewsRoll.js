@@ -136,9 +136,14 @@ class LatestNewsRoll extends React.Component {
           posts.map(({ node: post }) => (
             <Article key={post.id}>
               <ArticleLink to={post.fields.slug}>
+                {post.frontmatter.title.includes('The Role') && console.log(post)}
                 <Image>
                   <Img
-                    fluid={post.frontmatter.image.childImageSharp.fluid}
+                    fluid={
+                      !!post.frontmatter.image.childImageSharp
+                        ? post.frontmatter.image.childImageSharp.fluid
+                        : post.frontmatter.image
+                    }
                     alt={post.frontmatter.title}
                   />
                 </Image>

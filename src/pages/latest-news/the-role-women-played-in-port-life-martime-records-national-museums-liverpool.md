@@ -4,12 +4,12 @@ type: news
 title: >-
   The Role Women Played in Port Life,  Martime Records, National Museums
   Liverpool
-image: /img/steerage-1.gif
+image: /img/steerage-1.jpg
 date: 2019-11-11T21:06:40.706Z
 description: >-
   An interesting paper by the National Museums Liverpool explains some evidence
   of the work carried out by women in port history and ‘their contribution to
-  port economics.’ 
+  port economics.’
 
   SOURCE: National Museums Liverpool, Maritime Archives and Library: Information
   sheet 67. ‘Women in Maritime Records
@@ -27,7 +27,7 @@ There is some evidence in the records of receipts to show that women had roles i
 
 There is also a receipt made out to Sarah Walker for cleaning ivory tusks brought from Africa in 1777.
 
-There are reports of possibly the first girl gangs with  'gangs of 40-50 women who regularly theived from the coffee ships'. So much so the need for a special dock police force was made in 1814.  
+There are reports of possibly the first girl gangs with  'gangs of 40-50 women who regularly theived from the coffee ships'. So much so the need for a special dock police force was made in 1814.
 
 Later in time, there’s an interesting story which took place in March 1916 when women were taken on as dockers at Huskisson Dock and around a similar time at Toxteth Dock. The first lot lasted about three weeks until the male workers refused to work with them supported by their union. Similarly at Toxteth Dock and so by 20 March 2016 all women’s employment was stopped.
 

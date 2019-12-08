@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { StaticQuery } from 'gatsby';
+import { StaticQuery, graphql } from 'gatsby';
 
 const Section = styled.section`
   position: fixed;
@@ -81,31 +81,26 @@ const Latest = styled.span`
 
 export const BreakingNewsView = ({ data }) => {
   const windowGlobal = typeof window !== 'undefined' && window;
-  if (windowGlobal) {
-    const [show, setShow] = useState(windowGlobal.sessionStorage.getItem('showLatestNews') || true);
+  const [show, setShow] = useState(windowGlobal && windowGlobal.sessionStorage.getItem('showLatestNews') || true);
+  const setWhetherToShow = () => {
+    setShow(false);
+    windowGlobal.sessionStorage.setItem('showLatestNews', false);
+  }
 
-    const setWhetherToShow = () => {
-      setShow(!show);
-      windowGlobal.sessionStorage.setItem('showLatestNews', false);
-    }
-
-    if (typeof data != undefined) {
-      const info = data.markdownRemark.frontmatter;
-      console.log(info.active && show);
-      if (show == true && info.active) {
-        console.log(show);
-        return (
-          <Section>
-            <Upper>
-              <Latest>{info.title}</Latest>
-              <Close onClick={setWhetherToShow}>{info.close_text}</Close>
-            </Upper>
-            <Lower>
-              <LowerText>{info.description}</LowerText>
-            </Lower>
-          </Section>
-        );
-      }
+  if (typeof data != undefined) {
+    const info = data.markdownRemark.frontmatter;
+    if (show === true && info.active) {
+      return (
+        <Section>
+          <Upper>
+            <Latest>{info.title}</Latest>
+            <Close onClick={setWhetherToShow}>{info.close_text}</Close>
+          </Upper>
+          <Lower>
+            <LowerText>{info.description}</LowerText>
+          </Lower>
+        </Section>
+      );
     }
   }
 
