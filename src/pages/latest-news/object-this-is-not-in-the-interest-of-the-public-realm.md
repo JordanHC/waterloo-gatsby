@@ -2,7 +2,7 @@
 templateKey: news-post
 type: news
 title: OBJECT. THIS IS NOT IN THE INTERESTS OF THE PUBLIC REALM.
-image: /img/2019-12-07-2-.png
+image: /img/8.12.19.png
 date: 2019-12-07T09:40:12.787Z
 description: |
   Object to the amended proposed planning application 18F/3247.
