@@ -2,7 +2,7 @@
 templateKey: news-post
 type: news
 title: STOP THIS DEVELOPMENT - OBJECT TO THE CITYS PLANNING DEPARTMENT
-image: /img/screenshot-2019-12-05-at-12.07.39.png
+image: /img/screenshot-2019-12-06-at-09.18.13.png
 date: 2019-12-06T15:00:30.824Z
 description: |-
   An offence on sense. 
