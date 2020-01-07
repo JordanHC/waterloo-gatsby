@@ -1,7 +1,7 @@
 ---
 templateKey: news-post
 type: news
-title: Growing Support to save west waterloo dock
+title: Growing Support to Save West Waterloo Dock
 image: /img/64996361_10214495661289243_6983668629191524352_n.jpg
 date: 2020-01-07T17:22:39.482Z
 description: Two Charities join the fight to Save Our Dock
