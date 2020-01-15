@@ -21,11 +21,14 @@ cta2:
   heading: History Of Waterloo Dock
   linkURL: /history
 cta3:
-  description: >
-    Together let’s put a stop to the planned development (18F/3247) which
-    proposes to infill most of the historic West Waterloo Dock in order to build
-    four high rise (10 storey) blocks of 538 units and ground floor commercial
-    space. Here is how you can help..
+  description: >-
+    We've now reached crunch time in our battle over West Waterloo Dock.
+
+
+    The millionaire speculators who want to fill in this most historic of docks
+    have very deep pockets. So we need top quality legal advice if we are to
+    stand any chance of halting their plans - and saving the city’s World
+    Heritage Status. We have set up a JustGiving page...
   heading: 'How to Help & Fundraising '
   linkURL: /how-to-help
 ---
