@@ -1,17 +1,19 @@
 ---
 templateKey: standard-page
-title: 'Fundraising '
+title: 'How to Help & Fundraising '
 image: /img/banner-small.png
 ---
-## **Make a Pledge to crowdfunder**
+## **Make a Pledge** 
 
-www.crowdfunder.co.uk/savewaterloodock1834
+We have set up a JustGiving page and a Crowd Funder page and hope as many local people as possible will consider this a cause worth fighting for. Please give what you can afford. Money will go towards a legal challenge and associated costs.
 
-Money raised to go towards a legal challenge ansd associated costs
+[https://www.justgiving.com/crowdfunding/save-waterloo-dock](https://www.justgiving.com/crowdfunding/save-waterloo-dock)
+
+[www.crowdfunder.co.uk/savewaterloodock1834](www.crowdfunder.co.uk/savewaterloodock1834)
 
 ### Sign Our Petition!
 
-http://chng.it/QMNVkJfrms
+<http://chng.it/QMNVkJfrms>
 
 Sign our petition by clicking the link above to show your support in objecting to this proposed planning application.
 
