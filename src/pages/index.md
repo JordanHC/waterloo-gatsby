@@ -22,9 +22,6 @@ cta2:
   linkURL: /history
 cta3:
   description: >-
-    We've now reached crunch time in our battle over West Waterloo Dock.
-
-
     The millionaire speculators who want to fill in this most historic of docks
     have very deep pockets. So we need top quality legal advice if we are to
     stand any chance of halting their plans - and saving the city’s World
