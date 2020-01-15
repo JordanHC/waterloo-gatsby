@@ -26,7 +26,7 @@ cta3:
     proposes to infill most of the historic West Waterloo Dock in order to build
     four high rise (10 storey) blocks of 538 units and ground floor commercial
     space. Here is how you can help..
-  heading: Looking To Help?
+  heading: 'How to Help & Fundraising '
   linkURL: /how-to-help
 ---
 
