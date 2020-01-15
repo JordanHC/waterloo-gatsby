@@ -1,6 +1,6 @@
 ---
 templateKey: standard-page
-title: How To Help
+title: 'Fundraising '
 image: /img/banner-small.png
 ---
 ## **Make a Pledge to crowdfunder**
