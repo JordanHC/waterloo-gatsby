@@ -1,0 +1,18 @@
+---
+templateKey: news-post
+type: news
+title: 'Save Waterloo Dock: Statement on UNESCO World Heritage Decision'
+image: /img/og-image.png
+date: 2021-07-22T08:37:45.129Z
+description: >-
+  Save Waterloo Dock deeply regrets and is very saddened by the decision taken
+  by the UNESCO World Heritage Committee in a secret ballot in Paris to delete
+  Liverpool’s World Heritage designation.
+---
+ Liverpool Maritime Mercantile City was cited as: “the supreme example of a commercial port at the time of Britain’s greatest global influence”. This decision follows that in 2012 to place the Liverpool World Heritage Site on the List in Danger as a consequence of the city’s grant of outline planning permission for Peel Group’s massive 60 ha. regeneration project in the northern docks (Liverpool Waters). UNESCO issued repeated warnings over the past nine years of the damaging effect from ongoing approval and construction of numerous high rise buildings within the WHS and Buffer Zone without clear master plans.  Despite these, the Planning Department and Planning Committee persisted in their approvals. The position of the city and former mayor Joe Anderson has been that heritage should not get in the way of much needed development. The decision that finally tipped the scales was the approval to infill historic Bramley-Moore Dock to create a site for the new Everton FC stadium together with the failure of the Secretary of State for Housing, Communities & Local Government to “call in” that decision for UK Government review.  This was further compounded by the “too little, too late” approach of DCMS, the UK Government department charged with the “duty of ensuring ….the protection \[and] conservation…” of the Liverpool WHS as set out in the UNESCO Convention.
+
+Many people have tried hard during recent weeks to recover the situation.  Efforts were made to encourage the UNESCO WH Committee to delay any decision citing significant changes taking place in Liverpool including the election of a new mayor and the appointment of UK Government Commissioners to oversee areas of city government including planning and regeneration.  Save Waterloo Dock worked closely with Engage Liverpool and World Heritage Watch (Berlin) to influence the process in favour of delay.  As late as Sunday evening with the UNESCO WH Committee already in session we sent a joint e-mail to all members setting out arguments for deferral.  All this was unfortunately too late.     
+
+As a neighbourhood association representing residents and others in Riverside, one of the most deprived areas in Britain, we are certainly not opposed to the appropriate regeneration and development of the dock area.  Former mayor Joe Anderson’s claim that it is a case of either heritage protection or development was and remains false.  Other port cities have solved this successfully. However any redevelopment should respect the heritage and history of the area and not be aggressively and unsympathetically intrusive. This is especially so in a sensitive conservation area.  UNESCO World Heritage and ICOMOS are not dinosaurs. They too recognise the social and economic demands, but wish to see these tempered with a proper sense for the Outstanding Universal Value of the area.  Unfortunately, despite repeated warnings to the city, the developers and the UK Government that has not been the case.  The present  sad outcome is the result.
+
+The loss of the prestigious World Heritage accolade will be damaging both economically and politically to Liverpool and the UK.  Only two other sites have been so ignominiously treated in 50 years of World Heritage.
