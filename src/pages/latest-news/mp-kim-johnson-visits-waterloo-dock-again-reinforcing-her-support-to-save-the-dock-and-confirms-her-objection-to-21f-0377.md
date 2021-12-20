@@ -8,7 +8,7 @@ image: /img/img_9316.jpg
 date: 2021-12-20T16:10:56.564Z
 description: SAY NOT TO DOCK INFILL/NO TO PA 21F/0377
 ---
-Our hard-working MP Kim Johnson once again visited Waterloo Quays and The Warehouse to reinforce her support for the Campaign to Save Waterloo Dock and to send Christmas greetings to all our community. 
+Our hard-working MP Kim Johnson once again visited Waterloo Quays and The Warehouse to reinforce her support for the Campaign to Save Waterloo Dock and to send Festive Greetings to all our community. 
 
 Her objection to 21F/0377 was worthy and strong, demonstrating she has listened to our community's concerns and understands what's at stake. 
 
