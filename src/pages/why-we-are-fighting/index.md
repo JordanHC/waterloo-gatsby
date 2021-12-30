@@ -1,15 +1,33 @@
 ---
 templateKey: standard-page
-title: What we are fighting for
+title: WHAT ARE WE FIGHTING FOR
 image: /img/banner-small.png
 ---
-### To Save West Waterloo Dock
-
 ![West Waterloo Dock](/img/64996361_10214495661289243_6983668629191524352_n.jpg "West Waterloo Dock - Now")
 
-At the end of 2018 a planning proposal 18F/3247 was submitted to Liverpool City Council. It proposed to infill most of the historic West Waterloo Dock in order to build six, high rise blocks of 646 apartments, which would almost totally obscure the views of the historic, Grade II listed Waterloo Warehouse from the river and the Wirral. Heritage vandalism on a truly epic scale. This proposal has now been updated (December 2019) - the proposal is to erect 4 10 storey blocks of 538 apartments with ground floor commercial space.
+### 
 
-This updated proposal continues to go against all the Heritage pledges in the Liverpool Local Plan 2013-2033 and most of the undertakings in the Liverpool City Council World Heritage Site Supplementary Planning Document in support of World Heritage status.  It seems inconceivable that it will not put the already at risk World Heritage status in even graver jeopardy.
+### 18F/3247  proposed to infill most of the historic West Waterloo Dock in order to build six, high-rise blocks of 646 apartments, which would almost totally obscure the views of the historic, Grade II listed Waterloo Warehouse from the river and the Wirral. Heritage vandalism on a truly epic scale. 
+
+### 
+
+### The application was updated, (December 2019) - with a revised proposal is to erect 4 -10 storey blocks of 538 apartments with ground floor commercial space.
+
+### 
+
+### Then it was changed again proposing 330 apartments including two 9-storey and one 4-storey block and still requiring the destructive dock infill of a historic heritage asset. 
+
+### 
+
+### Meanwhile, prior to COVID a local petition collected over 1000 signatures in a short space of four hours. In addition, an online petition was launched and has now exceeded our target of 3000 signatures!
+
+### 
+
+### In November Liverpool City Council completed their report for the planning committee and a provisional date of 30 November was set. At the last minute, once again, an amendment was submitted, delaying the conclusion of this planning application, which residents in the surrounding community had been opposing for three years.
+
+### 
+
+### Save Waterloo Dock Neighbourhood Association remains undeterred by the tactics of the developer and landowner.  We have run a positive information campaign; are resilient and will continue to oppose this. Major national heritage groups have applauded our efforts.  We have attracted support from our Liverpool Riverside MP Kim Johnson who has objected with strength and conviction as well as cross-party support from local councillors.  Our most recently elected Labour Councillor, Dave Hanratty, an experienced ex planning committee chair is committed to supporting and working with us on the campaign to - SAY NO TO DOCK INFILL and NO TO 21F/0377.
 
 The images below show the proposal and the planned site infill.
 
