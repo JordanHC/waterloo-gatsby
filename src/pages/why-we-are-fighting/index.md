@@ -15,7 +15,7 @@ image: /img/banner-small.png
 
 ### 
 
-### Then it was changed again proposing 330 apartments including two 9-storey and one 4-storey block and still requiring the destructive dock infill of a historic heritage asset. 
+### Then it was changed again to 21F/0377 proposing 330 apartments including two 9-storey and one 4-storey block and still requiring the destructive dock infill of a historic heritage asset. 
 
 ### 
 
