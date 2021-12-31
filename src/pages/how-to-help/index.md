@@ -17,11 +17,11 @@ https://www.justgiving.com/crowdfunding/save-waterloo-dock](https://www.justgivi
 
 <http://chng.it/QMNVkJfrms>
 
-Sign our petition by clicking the link above to show your support in objecting to this proposed planning application. We're almost at our target of 3000! Please help by taking a moment to sign.
+Sign our petition by clicking the link above to show your support in objecting to this proposed planning application. We have reached 3000, our next target is 3,250! Please help by taking a moment to sign.
 
 ### Write to Liverpool City Council
 
-Please write to Liverpool City Council with your objections to planning application 21F/0377  with regards to the infill of West Waterloo Dock. You can also do this online at Liverpool.gov.uk quoting the application number.
+Please write to Liverpool City Council with your objections to planning application 21F/0377  with regards to the infill of West Waterloo Dock. You can also do this online at Liverpool.gov.uk quoting the application number. **"Say NO to Dock infill - Say NO to 21F/0377"**
 
 ### Follow us on Twitter
 
@@ -29,4 +29,4 @@ Please write to Liverpool City Council with your objections to planning applicat
 
 ### Raise Awareness of Our Aim
 
-Please tell your family, friends and anybody that cares about our City. Let's save Liverpool's heritage assets and call out destructive development. Once it's gone, it's gone.
+Please tell your family, friends and anybody that cares about our City. Let's save Liverpool's heritage assets and call out destructive development. Once it's gone, it's gone. **Say NO to Dock infill - Say NO to 21F/0377.**
